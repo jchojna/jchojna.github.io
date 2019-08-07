@@ -1,4 +1,4 @@
-# wtf-gulp-starter
+# Jakub Chojna | Aspiring Frontend Developer
 
 `npm install -g gulp-cli`
 
