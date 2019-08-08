@@ -16,3 +16,11 @@ html {
 body {
   font-family: 'Poppins', Arial, sans-serif;
 }
+
+.skillset {
+
+  &__checkmark {
+    width: 20px;
+    fill: green;
+  }
+}
