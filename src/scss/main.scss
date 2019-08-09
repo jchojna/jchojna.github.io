@@ -3,6 +3,7 @@
 @import "normalize";
 @import "helpers";
 @import "variables";
+@import "mixins";
 
 
 html {
@@ -15,7 +16,7 @@ html {
 
 body {
   font-family: 'Poppins', Arial, sans-serif;
-  color: $color-default;
+  color: $color-text-black;
 }
 
 .page {
@@ -48,17 +49,27 @@ body {
   }
 
   &__description {
-
+    font-size: 1.625rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 1.5rem 0 0.5rem;
   }
 
   &__links {
-
+    @include light-text;
   }
 
   &__link {
 
-    &--email {
+    color: $color-primary;
+    font-weight: 500;
 
+    &--email {
+      display: inline-block;
+      margin-top: 2rem;
+      text-decoration: none;
+      height: 1.8em;
+      border-bottom: 2px solid $color-primary;
     }
   }
 }
@@ -88,9 +99,11 @@ body {
 */
 
 .skills {
+  padding: 0 $layout-side-offset 80px;
 
   &__heading {
-
+    @include section;
+    border-bottom: 2px solid $color-grey;
   }
 }
 
@@ -109,15 +122,79 @@ body {
   }
 
   &__heading {
+    font-size: 1.375rem;
+    margin: 0;
+    margin-top: 3.75rem;
+    padding-top: 0.8rem;
+    position: relative;
 
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 40px;
+      height: 4px;
+      border-radius: 10px;
+      background-color: $color-primary;
+    }
+
+    &--know::before {
+      background-color: $color-know;
+    }
+
+    &--familiar::before {
+      background-color: $color-familiar;
+    }
+
+    &--interested::before {
+      background-color: $color-interested;
+    }
   }
 
   &__list {
-
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
 
   &__item {
+    color: $color-text-grey;
+    font-size: 0.875rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
 
+    &--know {
+      
+    }
+
+    &--familiar {
+      
+    }
+
+    &--interested {
+      
+    }
+  }
+
+  &__checkmark {
+    fill: $color-primary;
+    height: $size-check-circle;
+    width: $size-check-circle;
+    margin-right: 0.75rem;
+
+    &--know {
+      fill: $color-know;
+    }
+
+    &--familiar {
+      fill: $color-familiar;
+    }
+
+    &--interested {
+      fill: $color-interested;
+    }
   }
 }
 
@@ -132,17 +209,20 @@ body {
 */
 
 .projects {
+  background-color: $color-light-grey;
+  padding: 80px $layout-side-offset;
 
   &__header {
 
   }
 
   &__heading {
-
+    @include section;
   }
 
   &__description {
-
+    @include light-text;
+    text-align: center;
   }
 }
 
@@ -166,7 +246,7 @@ body {
 .contact {
 
   &__heading {
-
+    @include section;
   }
 
   &__description {
