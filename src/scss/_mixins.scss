@@ -1,15 +1,43 @@
 @mixin light-text {
   color: $color-text-grey;
   line-height: 1.85;
-  font-size: 0.875rem;
+  font-size: $font-paragraph; // 14px
   font-weight: 300;
   margin: 0;
 }
 
-@mixin section {
-  font-size: 1.5rem;
+@mixin section-heading {
+  font-size: $font-second-heading;
   text-align: center;
-  line-height: 1.33;
   padding-bottom: 0.8rem;
   margin: 0;
+}
+
+@mixin line-decoration {
+  padding-top: 0.8rem;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 4px;
+    border-radius: 10px;
+    background-color: $color-primary;
+  }
+}
+
+@mixin email-link {
+
+  &--email {
+    color: $color-primary;
+    font-size: $font-paragraph;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 2rem;
+    text-decoration: none;
+    border-bottom: 2px solid $color-primary;
+  }
 }
