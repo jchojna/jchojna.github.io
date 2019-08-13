@@ -21,17 +21,6 @@ body {
   color: $color-text-black;
 }
 
-.page {
-
-  &__header {
-
-  }
-
-  &__heading {
-
-  }
-}
-
 /*
 #### ##    ## ######## ########   #######
  ##  ###   ##    ##    ##     ## ##     ##
@@ -43,25 +32,32 @@ body {
 */
 
 .intro {
-  width: 100%;
-  padding: 64px $layout-side-offset 120px;
-
-  &__heading {
-
-  }
+  @include container;
 
   &__description {
-    font-size: $font-first-heading;
+    font-size: 1.625rem; // 26px
     font-weight: 600;
     margin: 1.5rem 0 0.5rem;
+    max-width: $layout-header-max-width;
   }
 
   &__links {
     @include light-text;
+    max-width: $layout-header-max-width;
   }
 
   &__link {
     @include email-link;
+  }
+
+  @media only screen and (min-width: $media-tablet) {
+
+    & {
+      
+      &__description {
+        font-size: 2.5rem; // 40px
+      }
+    }
   }
 }
 
@@ -77,6 +73,14 @@ body {
     border-radius: 50%;
     border: 3px solid #fff;
   }
+
+  @media only screen and (min-width: $media-tablet) {
+
+    & {
+      width: $size-tablet-logo;
+      height: $size-tablet-logo;
+    }
+  }
 }
 
 /*
@@ -90,7 +94,7 @@ body {
 */
 
 .skills {
-  padding: 0 $layout-side-offset 80px;
+  @include container;
 
   &__heading {
     @include section-heading;
@@ -113,7 +117,7 @@ body {
   }
 
   &__heading {
-    font-size: 1.375rem;
+    font-size: 1.375rem; // 22px
     margin: 0;
     margin-top: 3.75rem;
     @include line-decoration;
@@ -139,7 +143,7 @@ body {
 
   &__item {
     color: $color-text-grey;
-    font-size: 0.875rem;
+    font-size: $font-paragraph;
     margin-top: 1rem;
     display: flex;
     align-items: center;
@@ -189,7 +193,7 @@ body {
 
 .projects {
   background-color: $color-light-grey;
-  padding: 80px $layout-side-offset;
+  @include container;
 
   &__header {
 
@@ -223,8 +227,10 @@ body {
 */
 
 .contact {
+  @include container;
   background-color: $color-text-black;
-  padding: 120px $layout-side-offset;
+  padding-top: 120px;
+  padding-bottom: 120px;
   
 
   &__heading {
@@ -241,7 +247,7 @@ body {
 
   &__copyright {
     color: $color-text-grey;
-    font-size: $font-copyright;
+    font-size: 0.8rem;
   }
 }
 

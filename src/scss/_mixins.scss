@@ -1,3 +1,9 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @mixin light-text {
   color: $color-text-grey;
   line-height: 1.85;
@@ -7,7 +13,7 @@
 }
 
 @mixin section-heading {
-  font-size: $font-second-heading;
+  font-size: 1.5rem; // 24px
   text-align: center;
   padding-bottom: 0.8rem;
   margin: 0;
@@ -39,5 +45,27 @@
     margin-top: 2rem;
     text-decoration: none;
     border-bottom: 2px solid $color-primary;
+  }
+}
+
+@mixin container {
+  @include flex-center;
+  width: 100%;
+  padding: 60px 16px;
+
+  &__container {
+    width: 100%;
+  }
+
+  @media only screen and (min-width: $media-tablet) {
+
+    & {
+      padding: 100px 0;
+
+      &__container {
+        max-width: 1200px;
+        width: 80%;
+      }
+    }
   }
 }
