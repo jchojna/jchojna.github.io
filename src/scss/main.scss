@@ -103,6 +103,7 @@ body {
 }
 
 .skillset {
+  margin-top: 3.75rem;
 
   &--know {
 
@@ -119,8 +120,8 @@ body {
   &__heading {
     font-size: 1.375rem; // 22px
     margin: 0;
-    margin-top: 3.75rem;
     @include line-decoration;
+    flex-basis: 50%;
 
     &--know::before {
       background-color: $color-know;
@@ -139,14 +140,13 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
+    flex-basis: 50%;
   }
 
   &__item {
     color: $color-text-grey;
     font-size: $font-paragraph;
     margin-top: 1rem;
-    display: flex;
-    align-items: center;
 
     &--know {
       
@@ -177,6 +177,21 @@ body {
 
     &--interested {
       fill: $color-interested;
+    }
+  }
+
+  
+
+  @media only screen and (min-width: $media-tablet) {
+
+    & {
+      display: flex;
+      justify-content: space-between;
+
+      &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
   }
 }
