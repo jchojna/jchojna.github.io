@@ -146,7 +146,9 @@ body {
   &__item {
     color: $color-text-grey;
     font-size: $font-paragraph;
+    padding-left: 1.6rem;
     margin-top: 1rem;
+    position: relative;
 
     &--know {
       
@@ -165,7 +167,9 @@ body {
     fill: $color-primary;
     height: $size-check-circle;
     width: $size-check-circle;
-    margin-right: 0.75rem;
+    position: absolute;
+    top: 2px;
+    left: 0;
 
     &--know {
       fill: $color-know;
