@@ -231,13 +231,34 @@ body {
   }
 
   &__repos {
+    display: grid;
+    grid-gap: 16px;
+  }
 
+  @media only screen and (min-width: $media-tablet) {
+
+    & {
+
+      &__heading {
+        text-align: left;
+      }
+
+      &__description {
+        text-align: left;
+        max-width: 50%;
+      }
+
+      &__repos {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
   }
 }
 
 .repo {
   background-color: #fff;
   box-shadow: 0px 6px 16px rgba($color: $color-text-black, $alpha: 0.09);
+  border-radius: 4px;
 
   &__header {
     padding: 2rem;
@@ -255,6 +276,11 @@ body {
 
   &__description {
     @include light-text;
+  }
+  
+  &__update {
+    @include light-text;
+    font-size: 0.7rem
   }
 
   &__navigation {
@@ -293,24 +319,6 @@ body {
     margin-right: 6px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
