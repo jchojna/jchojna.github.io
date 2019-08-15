@@ -47,7 +47,7 @@ body {
   }
 
   &__link {
-    @include email-link;
+    @include link;
   }
 
   @media only screen and (min-width: $media-tablet) {
@@ -211,8 +211,10 @@ body {
 */
 
 .projects {
-  background-color: $color-light-grey;
   @include container;
+  background-color: $color-light-grey;
+  padding-top: 80px;
+  padding-bottom: 80px;
 
   &__header {
 
@@ -223,17 +225,97 @@ body {
   }
 
   &__description {
-    text-align: center;
     @include light-text;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  &__repos {
+
   }
 }
 
-.cards {
+.repo {
+  background-color: #fff;
+  box-shadow: 0px 6px 16px rgba($color: $color-text-black, $alpha: 0.09);
+
+  &__header {
+    padding: 2rem;
+  }
+
+  &__icon {
+    height: 40px;
+    width: 40px;
+  }
 
   &__heading {
+    margin: 1rem 0;
+    font-size: 1rem;
+  }
 
+  &__description {
+    @include light-text;
+  }
+
+  &__navigation {
+    background-color: $color-light-grey;
+    padding: 10px;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+
+    &:not(:last-child) {
+      border-right: 1px solid $color-grey;
+    }
+  }
+  
+
+  &__link {
+    @include link;
+    @include flex-center;
+    padding: 0.3rem 1.2rem;
+    text-decoration: none;
+  }
+
+  &__svg {
+    fill: $color-primary;
+    height: 20px;
+    width: 20px;
+    margin-right: 6px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 ########  #######   #######  ######## ######## ########
@@ -286,9 +368,6 @@ body {
   }
 
   &__link {
-    font-size: 2rem;
-    color: #fff;
-
-    @include email-link;
+    @include link;
   }
 }

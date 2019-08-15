@@ -35,16 +35,22 @@
   }
 }
 
-@mixin email-link {
+@mixin link {
+  color: $color-primary;
+  font-size: $font-paragraph;
+  font-weight: 500;
+  display: inline-block;
 
   &--email {
-    color: $color-primary;
-    font-size: $font-paragraph;
-    font-weight: 500;
-    display: inline-block;
     margin-top: 2rem;
     text-decoration: none;
+    padding-bottom: 0.4rem;
     border-bottom: 2px solid $color-primary;
+  }
+  
+  &--icon {
+    font-size: 2rem;
+    color: #fff;
   }
 }
 
