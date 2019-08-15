@@ -30,7 +30,6 @@ const handleRepo = (repos) => {
     const updateTime = repo.updated_at.slice(0,10).split("-").reverse().join("-");
 
     const repoProjects = document.querySelector('.projects__repos--js');
-    console.log(repo);
 
     repoProjects.innerHTML += `
     <section class="repo">
