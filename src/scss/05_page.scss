@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *, *:before, *:after {
@@ -26,6 +27,7 @@ body {
         right: 0;
         bottom: 0;
         border: 0.75rem solid $color-default;
+        pointer-events: none;
       }
     }
   }
