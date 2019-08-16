@@ -1,0 +1,32 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  line-height: 1.4;
+  color: $color-default;
+}
+
+.page {
+
+  @media only screen and (min-width: $media-tablet) {
+    & {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 0.75rem solid $color-default;
+      }
+    }
+  }
+}

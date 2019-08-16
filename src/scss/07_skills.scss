@@ -1,0 +1,106 @@
+.skills {
+  @include container;
+
+  &__heading {
+    @include section-heading;
+    border-bottom: 2px solid $color-grey;
+  }
+}
+
+.skillset {
+  margin-top: 3.75rem;
+
+  &--know {
+
+  }
+
+  &--familiar {
+
+  }
+
+  &--interested {
+
+  }
+
+  &__heading {
+    font-size: 1.375rem; // 22px
+    margin: 0;
+    @include line-decoration;
+    flex-basis: 50%;
+
+    &--know::before {
+      background-color: $color-know;
+    }
+
+    &--familiar::before {
+      background-color: $color-familiar;
+    }
+
+    &--interested::before {
+      background-color: $color-interested;
+    }
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-basis: 50%;
+  }
+
+  &__item {
+    color: $color-dark-grey;
+    font-size: $font-paragraph;
+    padding-left: 1.6rem;
+    margin-top: 1rem;
+    position: relative;
+
+    &--know {
+      
+    }
+
+    &--familiar {
+      
+    }
+
+    &--interested {
+      
+    }
+  }
+
+  &__checkmark {
+    fill: $color-primary;
+    height: $size-check-circle;
+    width: $size-check-circle;
+    position: absolute;
+    top: 2px;
+    left: 0;
+
+    &--know {
+      fill: $color-know;
+    }
+
+    &--familiar {
+      fill: $color-familiar;
+    }
+
+    &--interested {
+      fill: $color-interested;
+    }
+  }
+
+  
+
+  @media only screen and (min-width: $media-tablet) {
+
+    & {
+      display: flex;
+      justify-content: space-between;
+
+      &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.intro {
+  @include container;
+
+  &__description {
+    font-size: 1.625rem; // 26px
+    font-weight: 600;
+    margin: 1.5rem 0 0.5rem;
+    max-width: $layout-header-max-width;
+  }
+
+  &__links {
+    @include light-text;
+    max-width: $layout-header-max-width;
+  }
+
+  &__link {
+    @include link;
+  }
+
+  @media only screen and (min-width: $media-tablet) {
+
+    & {
+      
+      &__description {
+        font-size: 2.5rem; // 40px
+      }
+    }
+  }
+}
+
+.avatar {
+  width: $size-mobile-logo;
+  height: $size-mobile-logo;
+  background-color: $color-grey;
+  padding: 4px;
+  border-radius: 50%;
+  
+  &__photo {
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid #fff;
+  }
+
+  @media only screen and (min-width: $media-tablet) {
+
+    & {
+      width: $size-tablet-logo;
+      height: $size-tablet-logo;
+    }
+  }
+}

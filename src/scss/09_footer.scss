@@ -1,0 +1,44 @@
+.contact {
+  @include container;
+  background-color: $color-default;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  
+
+  &__heading {
+    @include section-heading;
+    @include line-decoration;
+    color: #fff;
+    text-align: left;
+  }
+
+  &__description {
+    @include light-text;
+    color: #fff;
+  }
+
+  &__copyright {
+    color: $color-dark-grey;
+    font-size: 0.8rem;
+  }
+}
+
+.social {
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    max-width: 240px;
+    padding: 0;
+    margin: 0;
+    margin-top: 30px;
+  }
+
+  &__item {
+    display: inline-block;
+  }
+
+  &__link {
+    @include link;
+  }
+}
