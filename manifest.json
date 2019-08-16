@@ -5,8 +5,8 @@
   "background_color": "#171F3F",
   "display": "standalone",
   "orientation": "portrait",
-  "scope": "/jchojna.github.io/",
-  "start_url": "/jchojna.github.io/",
+  "scope": "index.html",
+  "start_url": "index.html",
   "icons": [
     {
       "src": "assets/pwa/icons/icon-72x72.png",
