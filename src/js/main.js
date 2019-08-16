@@ -28,18 +28,18 @@ const handleRepo = (repos) => {
       repo.description = "No description"
     }
     const updateTime = repo.updated_at.slice(0,10).split("-").reverse().join("-");
-
     const repoProjects = document.querySelector('.projects__repos--js');
+    const { name, description, homepage, html_url } = repo;
 
     repoProjects.innerHTML += `
     <section class="repo">
       <header class="repo__header">
         <img src="assets/svg/github-icon.svg" alt="github icon" class="repo__icon">
         <h3 class="repo__heading repo__heading--js">
-          ${repo.name}
+          ${name}
         </h3>
         <p class="repo__description">
-          ${repo.description}
+          ${description}
         </p>
         <p class="repo__update">
           last update: ${updateTime}
@@ -48,7 +48,7 @@ const handleRepo = (repos) => {
       <nav class="repo__navigation">
         <ul class="repo__list">
           <li class="repo__item">
-            <a href="https://jchojna.github.io/${repo.name}" class="repo__link" target="_blank>
+            <a href="https://jchojna.github.io/${homepage}" class="repo__link" target="_blank rel="nofollow noreferrer" title="go to project's demo">
               <svg class="repo__svg">
                 <use href="assets/svg/sprite-map.svg#link-demo">
               </svg>
@@ -56,7 +56,7 @@ const handleRepo = (repos) => {
             </a>
           </li>
           <li class="repo__item">
-            <a href="${repo.html_url}" class="repo__link" target="_blank>
+            <a href="${html_url}" class="repo__link" target="_blank rel="nofollow noreferrer" title="go to project's code">
               <svg class="repo__svg">
                 <use href="assets/svg/sprite-map.svg#link-github">
               </svg>
