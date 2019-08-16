@@ -32,15 +32,15 @@
     @include line-decoration;
     flex-basis: 50%;
 
-    &--know::before {
+    .skillset--know &::before {
       background-color: $color-know;
     }
 
-    &--familiar::before {
+    .skillset--familiar &::before {
       background-color: $color-familiar;
     }
 
-    &--interested::before {
+    .skillset--interested &::before {
       background-color: $color-interested;
     }
   }
@@ -58,18 +58,6 @@
     padding-left: 1.6rem;
     margin-top: 1rem;
     position: relative;
-
-    &--know {
-      
-    }
-
-    &--familiar {
-      
-    }
-
-    &--interested {
-      
-    }
   }
 
   &__checkmark {
@@ -80,20 +68,18 @@
     top: 2px;
     left: 0;
 
-    &--know {
+    .skillset--know & {
       fill: $color-know;
     }
 
-    &--familiar {
+    .skillset--familiar & {
       fill: $color-familiar;
     }
 
-    &--interested {
+    .skillset--interested & {
       fill: $color-interested;
     }
   }
-
-  
 
   @media only screen and (min-width: $media-tablet) {
 

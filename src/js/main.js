@@ -25,7 +25,7 @@ if ('serviceWorker' in navigator) {
 const handleRepo = (repos) => {
   for (const repo of repos) {
     if (repo.description === null) {
-      repo.description = "No description"
+      repo.description = "No description 😟";
     }
     const updateTime = repo.updated_at.slice(0,10).split("-").reverse().join("-");
     const repoProjects = document.querySelector('.projects__repos--js');

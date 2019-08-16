@@ -47,6 +47,9 @@
   background-color: #fff;
   box-shadow: 0px 6px 16px rgba($color: $color-default, $alpha: 0.09);
   border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   &__header {
     padding: 2rem;
