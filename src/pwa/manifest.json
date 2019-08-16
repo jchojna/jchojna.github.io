@@ -1,12 +1,12 @@
 {
-  "name": "WTF: PWA",
-  "short_name": "WTF: PWA",
-  "theme_color": "#000000",
-  "background_color": "#000000",
+  "name": "Jakub Chojna | Frontend Portfolio Website",
+  "short_name": "Jakub Chojna | Frontend Portfolio Website",
+  "theme_color": "#0593FB",
+  "background_color": "#171F3F",
   "display": "standalone",
   "orientation": "portrait",
-  "scope": "/wtf-gulp-starter/",
-  "start_url": "/wtf-gulp-starter/",
+  "scope": "/jchojna.github.io/",
+  "start_url": "/jchojna.github.io/",
   "icons": [
     {
       "src": "assets/pwa/icons/icon-72x72.png",
