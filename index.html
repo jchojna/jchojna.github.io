@@ -5,16 +5,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Jakub Chojna | Frontend Developer</title>
-  <meta name="description" content="Description" />
+  <title>Jakub Chojna | Frontend Portfolio Website</title>
+  <meta name="description" content="Website containing the frontend projects done by me so far and my skills description." />
 
-  <!-- 
-    <meta property="og:title" content="" />
-    <meta property="og:description" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
- -->
-  <!-- 
+  
+    <meta property="og:title" content="Jakub Chojna | Frontend Portfolio Website" />
+    <meta property="og:description" content="Website containing the frontend projects done by me so far and my skills description." />
+    <meta property="og:url" content="https://jchojna.github.io/" />
+    <meta property="og:image" content="https://jchojna.github.io/assets/img/cover.jpg" />
+
+  
     <link rel="manifest" href="manifest.json" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <link
@@ -28,7 +28,7 @@
       type="image/png"
       href="assets/icons/icon-192x192.png"
     />
- -->
+
   <link rel="stylesheet" href="css/main.css" />
 </head>
 
@@ -37,26 +37,20 @@
 
     <!-- PAGE HEADER -->
     <header class="intro">
-      <h1 class="intro__title visuallyhidden">
-        Jakub Chojna - Frontend Developer
-      </h1>
-
+      <h1 class="intro__header visuallyhidden">Jakub Chojna | Aspiring Frontend Developer</h1>
       <nav class="intro__container">
-        <h2 class="intro__heading visuallyhidden">Intro</h2>
         <div class="avatar">
           <img src="assets/img/avatar.jpg" alt="Photography of Jakub Chojna with a brick wall in the background"
-            class="avatar__photo">
+          class="avatar__photo">
         </div>
-        <p class="intro__description">
-          Hi there! 👋 <br> My name is Jakub and I’m an aspiring Frontend Developer and a keen road cycling fan.
-        </p>
+        <h2 class="intro__heading">Hi there! 👋 <br> My name is Jakub and I’m an aspiring Frontend Developer and a keen road cycling fan.</h2>
         <p class="intro__links">
           You might be interested in checking the list of
-          <a href="#" class="intro__link">my skills</a>
+          <a href="#skills" class="intro__link">my skills</a>
           . Don’t forget to have a glimpse at
-          <a href="#" class="intro__link">my projects</a>
+          <a href="#projects" class="intro__link">my projects</a>
           . Currently I’m looking for a new challenges so if you have one -
-          <a href="#" class="intro__link">contact me</a>
+          <a href="#contact" class="intro__link">contact me</a>
           😊
         </p>
         <a href="mailto:info@jakubchojna.pl?subject=Inquiry" class="intro__link intro__link--email">info@jakubchojna.pl</a>
@@ -65,113 +59,89 @@
     <!-- END OF PAGE HEADER -->
 
     <!-- SKILLS SECTION -->
-    <section class="skills">
+    <section id="skills" class="skills">
       <div class="skills__container">
         <h2 class="skills__heading">My Skills</h2>
         <!-- KNOW -->
-        <section class="skillset">
-          <h3 class="skillset__heading skillset__heading--know">Working knowledge</h3>
+        <section class="skillset skillset--know">
+          <h3 class="skillset__heading">Working knowledge</h3>
           <ul class="skillset__list">
             <li class="skillset__item">
-              <svg class="skillset__checkmark skillset__checkmark--know">
-                <use href="assets/svg/sprite-map.svg#check-circle">
+              <svg class="skillset__checkmark">
+                <use href="assets/svg/sprite-map.svg#check-circle"></use>
               </svg>
               Semantic HTML5
             </li>
             <li class="skillset__item">
-              <svg class="skillset__checkmark skillset__checkmark--know">
-                <use href="assets/svg/sprite-map.svg#check-circle">
+              <svg class="skillset__checkmark">
+                <use href="assets/svg/sprite-map.svg#check-circle"></use>
               </svg>
               CSS3
             </li>
             <li class="skillset__item">
-              <svg class="skillset__checkmark skillset__checkmark--know">
-                <use href="assets/svg/sprite-map.svg#check-circle">
+              <svg class="skillset__checkmark">
+                <use href="assets/svg/sprite-map.svg#check-circle"></use>
               </svg>
               SASS
             </li>
             <li class="skillset__item">
-              <svg class="skillset__checkmark skillset__checkmark--know">
-                <use href="assets/svg/sprite-map.svg#check-circle">
+              <svg class="skillset__checkmark">
+                <use href="assets/svg/sprite-map.svg#check-circle"></use>
               </svg>
               Javascript
             </li>
             <li class="skillset__item">
-              <svg class="skillset__checkmark skillset__checkmark--know">
-                <use href="assets/svg/sprite-map.svg#check-circle">
+              <svg class="skillset__checkmark">
+                <use href="assets/svg/sprite-map.svg#check-circle"></use>
               </svg>
               Figma
-            </li>
-            <li class="skillset__item">
-              <svg class="skillset__checkmark skillset__checkmark--know">
-                <use href="assets/svg/sprite-map.svg#check-circle">
-              </svg>
-              Something...
-            </li>
-            <li class="skillset__item">
-              <svg class="skillset__checkmark skillset__checkmark--know">
-                <use href="assets/svg/sprite-map.svg#check-circle">
-              </svg>
-              Something...
-            </li>
-            <li class="skillset__item">
-              <svg class="skillset__checkmark skillset__checkmark--know">
-                <use href="assets/svg/sprite-map.svg#check-circle">
-              </svg>
-              Something...
-            </li>
-            <li class="skillset__item">
-              <svg class="skillset__checkmark skillset__checkmark--know">
-                <use href="assets/svg/sprite-map.svg#check-circle">
-              </svg>
-              Something...
             </li>
           </ul>
         </section>
         <!-- END OF KNOW -->
         <!-- FAMILIAR -->
-        <section class="skillset">
-          <h3 class="skillset__heading skillset__heading--familiar">Know something about</h3>
+        <section class="skillset skillset--familiar">
+          <h3 class="skillset__heading">Know something about</h3>
           <ul class="skillset__list">
             <li class="skillset__item">
-              <svg class="skillset__checkmark skillset__checkmark--familiar">
-                <use href="assets/svg/sprite-map.svg#check-circle">
+              <svg class="skillset__checkmark">
+                <use href="assets/svg/sprite-map.svg#check-circle"></use>
               </svg>
               React.js
             </li>
             <li class="skillset__item">
-              <svg class="skillset__checkmark skillset__checkmark--familiar">
-                <use href="assets/svg/sprite-map.svg#check-circle">
+              <svg class="skillset__checkmark">
+                <use href="assets/svg/sprite-map.svg#check-circle"></use>
               </svg>
               Redux
             </li>
             <li class="skillset__item">
-              <svg class="skillset__checkmark skillset__checkmark--familiar">
-                <use href="assets/svg/sprite-map.svg#check-circle">
+              <svg class="skillset__checkmark">
+                <use href="assets/svg/sprite-map.svg#check-circle"></use>
               </svg>
               Progressive Web Apps
             </li>
             <li class="skillset__item">
-              <svg class="skillset__checkmark skillset__checkmark--familiar">
-                <use href="assets/svg/sprite-map.svg#check-circle">
+              <svg class="skillset__checkmark">
+                <use href="assets/svg/sprite-map.svg#check-circle"></use>
               </svg>
               Git
             </li>
             <li class="skillset__item">
-              <svg class="skillset__checkmark skillset__checkmark--familiar">
-                <use href="assets/svg/sprite-map.svg#check-circle">
+              <svg class="skillset__checkmark">
+                <use href="assets/svg/sprite-map.svg#check-circle"></use>
               </svg>
               Working with API
             </li>
             <li class="skillset__item">
-              <svg class="skillset__checkmark skillset__checkmark--familiar">
-                <use href="assets/svg/sprite-map.svg#check-circle">
+              <svg class="skillset__checkmark">
+                <use href="assets/svg/sprite-map.svg#check-circle"></use>
               </svg>
               NPM Scripts
             </li>
             <li class="skillset__item">
-              <svg class="skillset__checkmark skillset__checkmark--familiar">
-                <use href="assets/svg/sprite-map.svg#check-circle">
+              <svg class="skillset__checkmark">
+                <use href="assets/svg/sprite-map.svg#check-circle"></use>
               </svg>
               Accessibility
             </li>
@@ -179,50 +149,44 @@
         </section>
         <!-- END OF FAMILIAR -->
         <!-- INTERESTED -->
-        <section class="skillset skillset">
-          <h3 class="skillset__heading skillset__heading--interested">Want to learn</h3>
+        <section class="skillset skillset--interested">
+          <h3 class="skillset__heading">Want to learn</h3>
           <ul class="skillset__list">
             <li class="skillset__item">
-              <svg class="skillset__checkmark skillset__checkmark--interested">
-                <use href="assets/svg/sprite-map.svg#check-circle">
+              <svg class="skillset__checkmark">
+                <use href="assets/svg/sprite-map.svg#check-circle"></use>
               </svg>
               Node.js
             </li>
             <li class="skillset__item">
-              <svg class="skillset__checkmark skillset__checkmark--interested">
-                <use href="assets/svg/sprite-map.svg#check-circle">
+              <svg class="skillset__checkmark">
+                <use href="assets/svg/sprite-map.svg#check-circle"></use>
               </svg>
               Electron
             </li>
             <li class="skillset__item">
-              <svg class="skillset__checkmark skillset__checkmark--interested">
-                <use href="assets/svg/sprite-map.svg#check-circle">
+              <svg class="skillset__checkmark">
+                <use href="assets/svg/sprite-map.svg#check-circle"></use>
               </svg>
               Typescript
             </li>
             <li class="skillset__item">
-              <svg class="skillset__checkmark skillset__checkmark--interested">
-                <use href="assets/svg/sprite-map.svg#check-circle">
+              <svg class="skillset__checkmark">
+                <use href="assets/svg/sprite-map.svg#check-circle"></use>
               </svg>
               Gatsby
             </li>
             <li class="skillset__item">
-              <svg class="skillset__checkmark skillset__checkmark--interested">
-                <use href="assets/svg/sprite-map.svg#check-circle">
+              <svg class="skillset__checkmark">
+                <use href="assets/svg/sprite-map.svg#check-circle"></use>
               </svg>
               Server side rendering
             </li>
             <li class="skillset__item">
-              <svg class="skillset__checkmark skillset__checkmark--interested">
-                <use href="assets/svg/sprite-map.svg#check-circle">
+              <svg class="skillset__checkmark">
+                <use href="assets/svg/sprite-map.svg#check-circle"></use>
               </svg>
               Websockets
-            </li>
-            <li class="skillset__item">
-              <svg class="skillset__checkmark skillset__checkmark--interested">
-                <use href="assets/svg/sprite-map.svg#check-circle">
-              </svg>
-              Something...
             </li>
           </ul>
         </section>
@@ -232,7 +196,7 @@
     <!-- END OF SKILLS SECTION -->
 
     <!-- PROJECTS SECTION -->
-    <section class="projects">
+    <section id="projects" class="projects">
       <!-- PROJECTS CONTAINER -->
       <div class="projects__container">
         <header class="projects__header">
@@ -247,7 +211,7 @@
     </section> <!-- END OF PROJECTS SECTION -->
 
     <!-- FOOTER SECTION -->
-    <footer class="contact">
+    <footer id="contact" class="contact">
       <section class="contact__container">
         <h2 class="contact__heading">Contact Me</h2>
         <p class="contact__description">I’m open for new opportunities. If you have one for me we should talk!</p>
@@ -256,27 +220,27 @@
           <h3 class="social__heading visuallyhidden">Social Media</h3>
           <ul class="social__list">
             <li class="social__item">
-              <a href="#" class="social__link social__link--icon">
+              <a href="#" class="social__link social__link--icon" title="go to myfacebook profile">
                 <i class="fab fa-facebook-square"></i>
               </a>
             </li>
             <li class="social__item">
-              <a href="#" class="social__link social__link--icon">
+              <a href="#" class="social__link social__link--icon" title="go to my linkedin profile">
                 <i class="fab fa-linkedin"></i>
               </a>
             </li>
             <li class="social__item">
-              <a href="#" class="social__link social__link--icon">
+              <a href="#" class="social__link social__link--icon" title="go to my github profile">
                 <i class="fab fa-github"></i>
               </a>
             </li>
             <li class="social__item">
-              <a href="#" class="social__link social__link--icon">
+              <a href="#" class="social__link social__link--icon" title="go to my instagram profile">
                 <i class="fab fa-instagram"></i>
               </a>
             </li>
             <li class="social__item">
-              <a href="#" class="social__link social__link--icon">
+              <a href="#" class="social__link social__link--icon" title="go to behance profile">
                 <i class="fab fa-behance-square"></i>
               </a>
             </li>

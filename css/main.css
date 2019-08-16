@@ -348,7 +348,8 @@ template {
 
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  scroll-behavior: smooth; }
 
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
@@ -359,15 +360,19 @@ body {
   line-height: 1.4;
   color: #171F3F; }
 
-/*
-#### ##    ## ######## ########   #######
- ##  ###   ##    ##    ##     ## ##     ##
- ##  ####  ##    ##    ##     ## ##     ##
- ##  ## ## ##    ##    ########  ##     ##
- ##  ##  ####    ##    ##   ##   ##     ##
- ##  ##   ###    ##    ##    ##  ##     ##
-#### ##    ##    ##    ##     ##  #######
-*/
+@media only screen and (min-width: 768px) {
+  .page {
+    position: relative; }
+    .page::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border: 0.75rem solid #171F3F;
+      pointer-events: none; } }
+
 .intro {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -388,7 +393,7 @@ body {
       .intro__container {
         max-width: 1200px;
         width: 80%; } }
-  .intro__description {
+  .intro__heading {
     font-size: 1.625rem;
     font-weight: 600;
     margin: 1.5rem 0 0.5rem;
@@ -432,15 +437,6 @@ body {
       width: 120px;
       height: 120px; } }
 
-/*
- ######  ##    ## #### ##       ##        ######
-##    ## ##   ##   ##  ##       ##       ##    ##
-##       ##  ##    ##  ##       ##       ##
- ######  #####     ##  ##       ##        ######
-      ## ##  ##    ##  ##       ##             ##
-##    ## ##   ##   ##  ##       ##       ##    ##
- ######  ##    ## #### ######## ########  ######
-*/
 .skills {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -467,6 +463,9 @@ body {
     padding-bottom: 0.8rem;
     margin: 0;
     border-bottom: 2px solid #CBD2D9; }
+    @media only screen and (min-width: 768px) {
+      .skills__heading {
+        text-align: left; } }
 
 .skillset {
   margin-top: 3.75rem; }
@@ -486,11 +485,11 @@ body {
       height: 4px;
       border-radius: 10px;
       background-color: #0593FB; }
-    .skillset__heading--know::before {
+    .skillset--know .skillset__heading::before {
       background-color: #06C847; }
-    .skillset__heading--familiar::before {
+    .skillset--familiar .skillset__heading::before {
       background-color: #653CAD; }
-    .skillset__heading--interested::before {
+    .skillset--interested .skillset__heading::before {
       background-color: #2251CC; }
   .skillset__list {
     margin: 0;
@@ -511,11 +510,11 @@ body {
     position: absolute;
     top: 2px;
     left: 0; }
-    .skillset__checkmark--know {
+    .skillset--know .skillset__checkmark {
       fill: #06C847; }
-    .skillset__checkmark--familiar {
+    .skillset--familiar .skillset__checkmark {
       fill: #653CAD; }
-    .skillset__checkmark--interested {
+    .skillset--interested .skillset__checkmark {
       fill: #2251CC; }
   @media only screen and (min-width: 768px) {
     .skillset {
@@ -531,15 +530,6 @@ body {
         -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr); } }
 
-/*
-########  ########   #######        ## ########  ######  ########  ######
-##     ## ##     ## ##     ##       ## ##       ##    ##    ##    ##    ##
-##     ## ##     ## ##     ##       ## ##       ##          ##    ##
-########  ########  ##     ##       ## ######   ##          ##     ######
-##        ##   ##   ##     ## ##    ## ##       ##          ##          ##
-##        ##    ##  ##     ## ##    ## ##       ##    ##    ##    ##    ##
-##        ##     ##  #######   ######  ########  ######     ##     ######
-*/
 .projects {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -594,7 +584,17 @@ body {
   background-color: #fff;
   -webkit-box-shadow: 0px 6px 16px rgba(23, 31, 63, 0.09);
           box-shadow: 0px 6px 16px rgba(23, 31, 63, 0.09);
-  border-radius: 4px; }
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
   .repo__header {
     padding: 2rem; }
   .repo__icon {
@@ -663,15 +663,6 @@ body {
     width: 20px;
     margin-right: 6px; }
 
-/*
-########  #######   #######  ######## ######## ########
-##       ##     ## ##     ##    ##    ##       ##     ##
-##       ##     ## ##     ##    ##    ##       ##     ##
-######   ##     ## ##     ##    ##    ######   ########
-##       ##     ## ##     ##    ##    ##       ##   ##
-##       ##     ## ##     ##    ##    ##       ##    ##
-##        #######   #######     ##    ######## ##     ##
-*/
 .contact {
   display: -webkit-box;
   display: -ms-flexbox;
