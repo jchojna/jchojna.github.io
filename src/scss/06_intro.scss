@@ -1,7 +1,7 @@
 .intro {
   @include container;
 
-  &__description {
+  &__heading {
     font-size: 1.625rem; // 26px
     font-weight: 600;
     margin: 1.5rem 0 0.5rem;

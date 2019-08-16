@@ -4,6 +4,10 @@
   &__heading {
     @include section-heading;
     border-bottom: 2px solid $color-grey;
+    
+    @media only screen and (min-width: $media-tablet) {
+      text-align: left;
+    }
   }
 }
 
