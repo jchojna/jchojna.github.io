@@ -18,7 +18,27 @@ html {
 body {
   font-family: 'Poppins', Arial, sans-serif;
   line-height: 1.4;
-  color: $color-text-black;
+  color: $color-default;
+}
+
+.page {
+  
+
+  @media only screen and (min-width: $media-tablet) {
+    & {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 0.75rem solid $color-default;
+      }
+    }
+  }
 }
 
 /*
@@ -144,7 +164,7 @@ body {
   }
 
   &__item {
-    color: $color-text-grey;
+    color: $color-dark-grey;
     font-size: $font-paragraph;
     padding-left: 1.6rem;
     margin-top: 1rem;
@@ -257,7 +277,7 @@ body {
 
 .repo {
   background-color: #fff;
-  box-shadow: 0px 6px 16px rgba($color: $color-text-black, $alpha: 0.09);
+  box-shadow: 0px 6px 16px rgba($color: $color-default, $alpha: 0.09);
   border-radius: 4px;
 
   &__header {
@@ -337,7 +357,7 @@ body {
 
 .contact {
   @include container;
-  background-color: $color-text-black;
+  background-color: $color-default;
   padding-top: 120px;
   padding-bottom: 120px;
   
@@ -355,7 +375,7 @@ body {
   }
 
   &__copyright {
-    color: $color-text-grey;
+    color: $color-dark-grey;
     font-size: 0.8rem;
   }
 }

@@ -5,7 +5,7 @@
 }
 
 @mixin light-text {
-  color: $color-text-grey;
+  color: $color-dark-grey;
   line-height: 1.85;
   font-size: $font-paragraph; // 14px
   font-weight: 300;
