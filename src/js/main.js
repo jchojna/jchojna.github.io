@@ -30,7 +30,7 @@ const handleRepo = (repos) => {
     const updateTime = repo.updated_at.slice(0,10).split("-").reverse().join("-");
     const repoProjects = document.querySelector('.projects__repos--js');
     const { name, description, homepage, html_url } = repo;
-
+console.log(repo);
     repoProjects.innerHTML += `
     <section class="repo">
       <header class="repo__header">
@@ -47,14 +47,19 @@ const handleRepo = (repos) => {
       </header>
       <nav class="repo__navigation">
         <ul class="repo__list">
-          <li class="repo__item">
-            <a href="https://jchojna.github.io/${homepage}" class="repo__link" target="_blank rel="nofollow noreferrer" title="go to project's demo">
-              <svg class="repo__svg">
-                <use href="assets/svg/sprite-map.svg#link-demo">
-              </svg>
-              <span class="repo__label">Demo</span>
-            </a>
-          </li>
+        ${ homepage ?
+          `
+            <li class="repo__item">
+              <a href="${homepage}" class="repo__link" target="_blank rel="nofollow noreferrer" title="go to project's demo">
+                <svg class="repo__svg">
+                  <use href="assets/svg/sprite-map.svg#link-demo">
+                </svg>
+                <span class="repo__label">Demo</span>
+              </a>
+            </li>
+          `
+          : ''
+        }
           <li class="repo__item">
             <a href="${html_url}" class="repo__link" target="_blank rel="nofollow noreferrer" title="go to project's code">
               <svg class="repo__svg">
