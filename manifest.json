@@ -6,7 +6,7 @@
   "display": "standalone",
   "orientation": "portrait",
   "scope": "/jchojna.github.io/",
-  "start_url": "https://jchojna.github.io/",
+  "start_url": "/jchojna.github.io/",
   "icons": [
     {
       "src": "assets/icons/icon-72x72.png",
