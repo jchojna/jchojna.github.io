@@ -40,5 +40,10 @@
 
   &__link {
     @include link;
+    transition: color $time-hover-button;
+
+    &:hover {
+      color: $color-primary;
+    }
   }
 }
