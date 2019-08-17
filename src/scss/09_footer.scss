@@ -1,8 +1,8 @@
 .contact {
   @include container;
   background-color: $color-default;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
   
 
   &__heading {
@@ -31,7 +31,7 @@
     max-width: 240px;
     padding: 0;
     margin: 0;
-    margin-top: 30px;
+    margin-top: 1.875rem;
   }
 
   &__item {

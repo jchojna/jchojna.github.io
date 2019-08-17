@@ -57,7 +57,7 @@
 @mixin container {
   @include flex-center;
   width: 100%;
-  padding: 60px 16px;
+  padding: 3.75rem 1rem;
 
   &__container {
     width: 100%;
@@ -66,7 +66,7 @@
   @media only screen and (min-width: $media-tablet) {
 
     & {
-      padding: 100px 0;
+      padding: 6.25rem 0;
 
       &__container {
         max-width: 1200px;
