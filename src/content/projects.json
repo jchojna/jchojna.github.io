@@ -127,7 +127,7 @@
   },
   {
     "name": "portfolio",
-    "repoName": "portfolio-page",
+    "repoName": "jchojna.github.io",
     "about": [
       "This project is a showcase of my pet projects, each presented in its own section. The site is a Single Page Application (SPA) with a focus on interactivity and animation, balanced with performance considerations to ensure smooth transitions.",
       "The project was initially built with vanilla JavaScript and later rewritten to Typescript and React."
