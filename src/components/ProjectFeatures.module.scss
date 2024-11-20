@@ -46,6 +46,9 @@
     }
   }
 
+  &.ghUsers {
+    @include projectFeature(ghUsers);
+  }
   &.tasktimer {
     @include projectFeature(tasktimer);
   }

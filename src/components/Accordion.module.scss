@@ -93,6 +93,9 @@
   &.resume {
     @include accordionLabel(resume);
   }
+  &.ghUsers {
+    @include accordionLabel(ghUsers);
+  }
   &.glob3d {
     @include accordionLabel(glob3d);
   }

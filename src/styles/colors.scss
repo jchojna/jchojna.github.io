@@ -18,6 +18,14 @@ $color-resume-light: mix($color-resume, #fff, 40%);
 $color-resume-dark: mix($color-resume, #000, 20%);
 $color-resume-black: mix($color-resume, #000, 10%);
 
+// GH-USERS
+$color-ghUsers: #8b39de;
+$color-ghUsers-accent: #cd234b;
+$color-ghUsers-white: mix($color-ghUsers, #fff, 20%);
+$color-ghUsers-light: mix($color-ghUsers, #fff, 40%);
+$color-ghUsers-dark: mix($color-ghUsers, #000, 20%);
+$color-ghUsers-black: mix($color-ghUsers, #000, 10%);
+
 // GLOB3D
 $color-glob3d: #4b3ddb;
 $color-glob3d-accent: #e5a110;
@@ -84,6 +92,14 @@ $colors: (
   resume-light: $color-resume-light,
   resume-dark: $color-resume-dark,
   resume-black: $color-resume-black,
+
+  // gh-users
+  ghUsers: $color-ghUsers,
+  ghUsers-accent: $color-ghUsers-accent,
+  ghUsers-white: $color-ghUsers-white,
+  ghUsers-light: $color-ghUsers-light,
+  ghUsers-dark: $color-ghUsers-dark,
+  ghUsers-black: $color-ghUsers-black,
 
   // glob3d
   glob3d: $color-glob3d,

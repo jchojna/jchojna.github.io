@@ -88,6 +88,9 @@ $size-icon-m: 50px;
   &.resume {
     @include icon(resume);
   }
+  &.ghUsers {
+    @include icon(ghUsers);
+  }
   &.glob3d {
     @include icon(glob3d);
   }

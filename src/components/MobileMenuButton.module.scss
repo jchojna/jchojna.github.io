@@ -40,6 +40,9 @@
   &.resume.active {
     fill: $color-resume-accent;
   }
+  &.ghUsers.active {
+    fill: $color-ghUsers-accent;
+  }
   &.tasktimer.active {
     fill: $color-tasktimer-accent;
   }

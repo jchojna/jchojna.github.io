@@ -28,6 +28,9 @@
   &.resume {
     @include graphic(resume);
   }
+  &.ghUsers {
+    @include graphic(ghUsers);
+  }
   &.glob3d {
     @include graphic(glob3d);
   }
