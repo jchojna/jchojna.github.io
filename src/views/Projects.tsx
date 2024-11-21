@@ -1,5 +1,8 @@
 import { useQuery } from '@tanstack/react-query';
 
+// gh-users snapshots
+import ghUsersSnap1 from '../assets/img/ghUsers/01.jpg';
+import ghUsersSnap2 from '../assets/img/ghUsers/02.jpg';
 // tasktimer snapshots
 import tasktimerSnap1 from '../assets/img/tasktimer/01.jpg';
 import tasktimerSnap2 from '../assets/img/tasktimer/02.jpg';
@@ -25,7 +28,7 @@ import projects from '../content/projects.json';
 import Project from './Project';
 
 const snapshots: { [key: string]: string[] } = {
-  ghUsers: [],
+  ghUsers: [ghUsersSnap1, ghUsersSnap2],
   glob3d: [],
   tasktimer: [tasktimerSnap1, tasktimerSnap2, tasktimerSnap3, tasktimerSnap4],
   hydrapp: [

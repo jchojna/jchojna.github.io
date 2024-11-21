@@ -73,6 +73,10 @@
         "totalSVG": 1
       },
       {
+        "name": "d3js",
+        "totalSVG": 3
+      },
+      {
         "name": "nodejs",
         "totalSVG": 1
       },
@@ -99,10 +103,6 @@
       {
         "name": "echarts",
         "totalSVG": 1
-      },
-      {
-        "name": "d3js",
-        "totalSVG": 3
       },
       {
         "name": "npm",
