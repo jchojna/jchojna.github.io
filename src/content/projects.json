@@ -3,15 +3,21 @@
     "name": "ghUsers",
     "repoName": "github-users",
     "about": [
-      "My first npm package built using vanilla JS, Three.js and TypeScript. It is a 3D globe with a customizable set of markers, each with a tooltip. The globe can be rotated and zoomed in and out. The package is published on npm and can be easily installed and used in any project."
+      "This is a simple web application that allows users to search for Github users by their username and displays the user data. The application uses the Github API to fetch user data."
     ],
     "features": [
       {
-        "label": "Functionality",
+        "label": "Features",
         "items": [
-          "the package allows to visualize bar markers on the globe or just bare globe",
-          "there is many options to customize the globe, markers and tooltips",
-          "highlighting markers on hover and click events"
+          "fetching user data from the Github API",
+          "form validation",
+          "error handling for fetched data",
+          "loading states with skeleton loaders",
+          "empty states",
+          "infinite scrolling",
+          "responsive design",
+          "unit tests with vitest",
+          "CI/CD setup"
         ]
       }
     ],
@@ -21,15 +27,19 @@
         "totalSVG": 1
       },
       {
-        "name": "javascript",
-        "totalSVG": 3
-      },
-      {
-        "name": "threejs",
+        "name": "react",
         "totalSVG": 1
       },
       {
-        "name": "sass",
+        "name": "mui",
+        "totalSVG": 1
+      },
+      {
+        "name": "react-query",
+        "totalSVG": 1
+      },
+      {
+        "name": "vite",
         "totalSVG": 1
       }
     ]
