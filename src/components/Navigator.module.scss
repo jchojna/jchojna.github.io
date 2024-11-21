@@ -30,6 +30,9 @@
   &.resume .button {
     @include navigatorButton(resume);
   }
+  &.ghUsers .button {
+    @include navigatorButton(ghUsers);
+  }
   &.tasktimer .button {
     @include navigatorButton(tasktimer);
   }

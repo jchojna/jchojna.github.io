@@ -31,7 +31,12 @@ $size-icon-m: 50px;
   display: flex;
   flex-direction: column;
   min-width: $size-icon-s;
+  transition: transform 0.1s;
   width: $size-icon-s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
 
   @media only screen and (min-width: $media-m) {
     min-width: $size-icon-m;
@@ -73,7 +78,7 @@ $size-icon-m: 50px;
     font-size: 10px;
     margin: 2px 0 4px;
     text-transform: uppercase;
-    word-break: break-all;
+    white-space: nowrap;
 
     @media only screen and (min-width: $media-l) {
       & {
@@ -87,6 +92,9 @@ $size-icon-m: 50px;
   }
   &.resume {
     @include icon(resume);
+  }
+  &.ghUsers {
+    @include icon(ghUsers);
   }
   &.glob3d {
     @include icon(glob3d);

@@ -41,6 +41,9 @@
   &.resume {
     @include menuButton(resume);
   }
+  &.ghUsers {
+    @include menuButton(ghUsers);
+  }
   &.tasktimer {
     @include menuButton(tasktimer);
   }

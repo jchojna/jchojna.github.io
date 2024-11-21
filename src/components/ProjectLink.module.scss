@@ -58,6 +58,9 @@
     border-top-width: 10px;
   }
 
+  &.ghUsers {
+    @include projectLink('ghUsers');
+  }
   &.glob3d {
     @include projectLink('glob3d');
   }

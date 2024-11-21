@@ -1,5 +1,50 @@
 [
   {
+    "name": "ghUsers",
+    "repoName": "github-users",
+    "about": [
+      "This is a simple web application that allows users to search for Github users by their username and displays the user data. The application uses the Github API to fetch user data."
+    ],
+    "features": [
+      {
+        "label": "Features",
+        "items": [
+          "fetching user data from the Github API",
+          "form validation",
+          "error handling for fetched data",
+          "loading states with skeleton loaders",
+          "empty states",
+          "infinite scrolling",
+          "responsive design",
+          "unit tests with vitest",
+          "CI/CD setup"
+        ]
+      }
+    ],
+    "icons": [
+      {
+        "name": "typescript",
+        "totalSVG": 1
+      },
+      {
+        "name": "react",
+        "totalSVG": 1
+      },
+      {
+        "name": "mui",
+        "totalSVG": 1
+      },
+      {
+        "name": "react-query",
+        "totalSVG": 1
+      },
+      {
+        "name": "vite",
+        "totalSVG": 1
+      }
+    ]
+  },
+  {
     "name": "glob3d",
     "repoName": "glob3d",
     "about": [

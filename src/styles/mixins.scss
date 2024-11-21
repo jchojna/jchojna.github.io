@@ -46,10 +46,13 @@
     @include sectionBackground($color-about, $color-about, $color-resume);
   }
   &.resume {
-    @include sectionBackground($color-about, $color-resume, $color-glob3d);
+    @include sectionBackground($color-about, $color-resume, $color-ghUsers);
+  }
+  &.ghUsers {
+    @include sectionBackground($color-resume, $color-ghUsers, $color-glob3d);
   }
   &.glob3d {
-    @include sectionBackground($color-resume, $color-glob3d, $color-tasktimer);
+    @include sectionBackground($color-ghUsers, $color-glob3d, $color-tasktimer);
   }
   &.tasktimer {
     @include sectionBackground($color-glob3d, $color-tasktimer, $color-hydrapp);

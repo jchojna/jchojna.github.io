@@ -1,5 +1,8 @@
 import { useQuery } from '@tanstack/react-query';
 
+// gh-users snapshots
+import ghUsersSnap1 from '../assets/img/ghUsers/01.jpg';
+import ghUsersSnap2 from '../assets/img/ghUsers/02.jpg';
 // tasktimer snapshots
 import tasktimerSnap1 from '../assets/img/tasktimer/01.jpg';
 import tasktimerSnap2 from '../assets/img/tasktimer/02.jpg';
@@ -20,16 +23,12 @@ import archvizSnap3 from '../assets/img/archviz/03.jpg';
 import archvizSnap4 from '../assets/img/archviz/04.jpg';
 import archvizSnap5 from '../assets/img/archviz/05.jpg';
 import archvizSnap6 from '../assets/img/archviz/06.jpg';
-// quotes snapshots
-import quotesSnap1 from '../assets/img/quotes/01.jpg';
-import quotesSnap2 from '../assets/img/quotes/02.jpg';
-import quotesSnap3 from '../assets/img/quotes/03.jpg';
-import quotesSnap4 from '../assets/img/quotes/04.jpg';
 
 import projects from '../content/projects.json';
 import Project from './Project';
 
 const snapshots: { [key: string]: string[] } = {
+  ghUsers: [ghUsersSnap1, ghUsersSnap2],
   glob3d: [],
   tasktimer: [tasktimerSnap1, tasktimerSnap2, tasktimerSnap3, tasktimerSnap4],
   hydrapp: [
@@ -50,7 +49,6 @@ const snapshots: { [key: string]: string[] } = {
     archvizSnap5,
     archvizSnap6,
   ],
-  quotes: [quotesSnap1, quotesSnap2, quotesSnap3, quotesSnap4],
 };
 
 type ProjectsProps = {

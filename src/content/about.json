@@ -17,6 +17,14 @@
         "totalSVG": 1
       },
       {
+        "name": "nextjs",
+        "totalSVG": 1
+      },
+      {
+        "name": "react-query",
+        "totalSVG": 1
+      },
+      {
         "name": "html",
         "totalSVG": 3
       },
@@ -29,6 +37,18 @@
         "totalSVG": 1
       },
       {
+        "name": "tailwind",
+        "totalSVG": 1
+      },
+      {
+        "name": "mui",
+        "totalSVG": 1
+      },
+      {
+        "name": "storybook",
+        "totalSVG": 1
+      },
+      {
         "name": "git",
         "totalSVG": 1
       },
@@ -37,7 +57,11 @@
         "totalSVG": 1
       },
       {
-        "name": "nextjs",
+        "name": "figma",
+        "totalSVG": 3
+      },
+      {
+        "name": "jest",
         "totalSVG": 1
       },
       {
@@ -45,27 +69,7 @@
         "totalSVG": 1
       },
       {
-        "name": "gatsby",
-        "totalSVG": 1
-      },
-      {
-        "name": "figma",
-        "totalSVG": 3
-      },
-      {
-        "name": "R",
-        "totalSVG": 2
-      },
-      {
-        "name": "shiny",
-        "totalSVG": 1
-      },
-      {
-        "name": "echarts",
-        "totalSVG": 1
-      },
-      {
-        "name": "jest",
+        "name": "vite",
         "totalSVG": 1
       },
       {
@@ -77,15 +81,35 @@
         "totalSVG": 1
       },
       {
+        "name": "python",
+        "totalSVG": 1
+      },
+      {
+        "name": "docker",
+        "totalSVG": 1
+      },
+      {
+        "name": "R",
+        "totalSVG": 2
+      },
+      {
+        "name": "shiny",
+        "totalSVG": 1
+      },
+      {
+        "name": "gatsby",
+        "totalSVG": 1
+      },
+      {
+        "name": "echarts",
+        "totalSVG": 1
+      },
+      {
         "name": "npm",
         "totalSVG": 1
       },
       {
         "name": "graphql",
-        "totalSVG": 1
-      },
-      {
-        "name": "docker",
         "totalSVG": 1
       },
       {
