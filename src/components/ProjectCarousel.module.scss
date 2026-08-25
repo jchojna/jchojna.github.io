@@ -17,6 +17,7 @@ $icon-size: 1.3rem;
   .arrow {
     border: 0 solid #fff;
     border-width: 3px 3px 0 0;
+    display: block;
     height: $icon-size;
     width: $icon-size;
 
@@ -29,21 +30,48 @@ $icon-size: 1.3rem;
     }
   }
 
-  :global(.slider-container) {
+  .navButton {
+    background: rgb(0 0 0 / 40%);
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 3rem;
+    padding: 0.75rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3rem;
+    z-index: 1;
+
+    &:disabled {
+      cursor: default;
+      opacity: 0.3;
+    }
+
+    &.previous {
+      left: 1rem;
+    }
+
+    &.next {
+      right: 1rem;
+    }
+  }
+
+  :global(.nuka-container) {
     border-radius: var.$border-radius * 2;
     opacity: 0.7;
     overflow: hidden;
     transition: opacity 0.2s;
+    width: 100%;
 
     &:hover {
       opacity: 1;
     }
   }
 
-  :global(.slide) {
-    display: flex;
-
-    img {
+  :global(.nuka-wrapper) {
+    > img {
+      flex: 0 0 100%;
       width: 100%;
     }
   }

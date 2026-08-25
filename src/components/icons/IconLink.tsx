@@ -14,7 +14,7 @@ type IconLink = {
   large?: boolean;
 };
 
-const IconLink = ({ details, view, large = false }: IconLink): JSX.Element => {
+const IconLink = ({ details, view, large = false }: IconLink) => {
   const iconClass = clsx(classes.icon, classes[view], large && classes.large);
   return (
     <li className={iconClass}>

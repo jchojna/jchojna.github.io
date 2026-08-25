@@ -14,7 +14,7 @@ type NavigatorButtonProps = {
 
 type NavigatorProps = {
   isMenuMode: boolean;
-  sectionsRef: React.RefObject<HTMLDivElement>;
+  sectionsRef: React.RefObject<HTMLDivElement | null>;
   setMenuMode: (isMenuMode: boolean) => void;
   backgroundSection: string;
   setBackgroundSection: (backgroundSection: string) => void;

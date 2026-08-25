@@ -13,7 +13,7 @@ type MenuButtonProps = {
   width: number;
   isMenuMode: boolean;
   isActive?: boolean;
-  sectionsRef: React.RefObject<HTMLDivElement>;
+  sectionsRef: React.RefObject<HTMLDivElement | null>;
   setMenuMode: (isMenuMode: boolean) => void;
 };
 

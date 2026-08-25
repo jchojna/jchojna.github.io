@@ -15,7 +15,7 @@ import classes from './Menu.module.scss';
 type MenuProps = {
   isMenuMode: boolean;
   setMenuMode: (isMenuMode: boolean) => void;
-  sectionsRef: React.RefObject<HTMLDivElement>;
+  sectionsRef: React.RefObject<HTMLDivElement | null>;
   backgroundSection: string;
   setBackgroundSection: (backgroundSection: string) => void;
   setIndicatorRef: (indicatorRef: HTMLDivElement | null) => void;
@@ -51,13 +51,13 @@ const Menu = ({
       sectionsRefCopy.addEventListener('scroll', handleScroll);
       return () => sectionsRefCopy.removeEventListener('scroll', handleScroll);
     }
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  }, []);
 
   useEffect(() => {
     handleIndicator();
     window.addEventListener('resize', handleIndicator);
     return () => window.removeEventListener('resize', handleIndicator);
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  }, []);
 
   // handle indicator position
   useEffect(() => {
@@ -93,7 +93,9 @@ const Menu = ({
                 key={index}
                 className={classes.menuItem}
                 onMouseEnter={() => {
-                  isMenuMode && setCurrentSectionIndex(index);
+                  if (isMenuMode) {
+                    setCurrentSectionIndex(index);
+                  }
                 }}
               >
                 <MenuButton

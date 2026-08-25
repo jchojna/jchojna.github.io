@@ -13,7 +13,7 @@ import classes from './MobileMenu.module.scss';
 type MobileMenuProps = {
   isMenuMode: boolean;
   setMenuMode: (isMenuMode: boolean) => void;
-  sectionsRef: React.RefObject<HTMLDivElement>;
+  sectionsRef: React.RefObject<HTMLDivElement | null>;
   setIndicatorRef: (indicatorRef: HTMLDivElement | null) => void;
 };
 
