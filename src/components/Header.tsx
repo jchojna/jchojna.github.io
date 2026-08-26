@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Menu from './Menu';
 import Navigator from './Navigator';
 
-import classes from './Header.module.scss';
+import classes from './Header.module.css';
 
 type HeaderProps = {
   isMenuMode: boolean;

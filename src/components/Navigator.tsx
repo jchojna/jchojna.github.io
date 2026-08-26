@@ -5,7 +5,7 @@ import menuItems from '../content/menu.json';
 import { scrollToSection } from '../utils/utils';
 import CurrentViewContext from '../views/CurrentViewContext';
 
-import classes from './Navigator.module.scss';
+import classes from './Navigator.module.css';
 
 type NavigatorButtonProps = {
   type: string;
@@ -40,8 +40,7 @@ const Navigator = ({
   const [currentSectionIndex] = useContext(CurrentViewContext);
   const navigatorClass = clsx(
     classes.navigator,
-    !isMenuMode && classes.visible,
-    classes[menuItems[currentSectionIndex].label]
+    !isMenuMode && classes.visible
   );
 
   const handlePrevClick = () => {
@@ -64,7 +63,7 @@ const Navigator = ({
   };
 
   return (
-    <nav className={navigatorClass}>
+    <nav className={navigatorClass} data-theme={menuItems[currentSectionIndex].label}>
       <NavigatorButton type="prev" handleClick={handlePrevClick} />
       <NavigatorButton type="next" handleClick={handleNextClick} />
       <NavigatorButton type="back" handleClick={handleBackClick} />

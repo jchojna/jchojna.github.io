@@ -1,14 +1,14 @@
 import clsx from 'clsx';
 
 import icons from '../../assets/svg/icons.svg';
-import classes from './Icon.module.scss';
+import classes from './Icon.module.css';
 
 const Icon = ({ view, details }: IconProps) => {
   const { name, totalSVG } = details;
   const svgArray = Array.from({ length: totalSVG }, (_, index) => index + 1);
 
   return (
-    <li className={clsx(classes.item, classes[view])}>
+    <li className={classes.item} data-theme={view}>
       <div className={classes.icon}>
         {svgArray.map((svg) => (
           <svg

@@ -1,0 +1,33 @@
+.container {
+  grid-template-areas:
+    'title'
+    'info'
+    'accordions';
+  max-width: 1200px;
+  padding: var(--menu-item-height) var(--offset-right-s) var(--menu-item-height)
+    var(--offset-left-s);
+
+  @media only screen and (min-width: 1201px) {
+    align-content: start;
+    grid-template-areas:
+      'title title'
+      'info accordions';
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.title {
+  border-color: var(--theme-accent);
+  color: var(--theme-light);
+}
+
+.info {
+  grid-area: info;
+}
+
+.accordions {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  grid-area: accordions;
+}

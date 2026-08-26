@@ -4,7 +4,7 @@ import { useRef, useState } from 'react';
 import ReactGA from 'react-ga4';
 import { useMediaQuery } from 'react-responsive';
 
-import classes from './App.module.scss';
+import classes from './App.module.css';
 import Header from './components/Header';
 import MobileHeader from './components/MobileHeader';
 import About from './views/About';

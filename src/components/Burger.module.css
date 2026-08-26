@@ -1,0 +1,35 @@
+.burger {
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  fill: var(--theme-accent);
+  height: var(--menu-item-height);
+  justify-content: center;
+  left: 5px;
+  outline: none;
+  padding: 0;
+  pointer-events: all;
+  position: fixed;
+  top: 5px;
+  transition: visibility 0s;
+  visibility: hidden;
+  width: var(--menu-item-height);
+  z-index: 99999999;
+
+  &.visible {
+    transition: visibility 0s 0.7s;
+    visibility: visible;
+  }
+
+  @media screen and (min-width: 1201px) {
+    &.visible {
+      visibility: hidden;
+    }
+  }
+}
+
+.svg {
+  width: 100%;
+}

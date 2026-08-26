@@ -4,7 +4,7 @@ import { useContext, useEffect, useRef, useState } from 'react';
 import menuSvg from '../assets/svg/menu.svg';
 import CurrentViewContext from '../views/CurrentViewContext';
 
-import classes from './MobileMenuButton.module.scss';
+import classes from './MobileMenuButton.module.css';
 
 type MobileMenuButtonProps = {
   index: number;
@@ -30,7 +30,6 @@ const MobileMenuButton = ({
     [classes.menuButton]: true,
     [classes.intro]: isMenuMode,
     [classes.active]: isActive,
-    [classes[label]]: true,
   });
   const shadowClass = clsx({
     [classes.menuSvgShadow]: true,
@@ -89,6 +88,7 @@ const MobileMenuButton = ({
       ref={buttonRef}
       href={`#${label}`}
       className={buttonClass}
+      data-theme={label}
       onClick={() => handleButtonClick(index)}
     >
       <div className={classes.menuSvg}>

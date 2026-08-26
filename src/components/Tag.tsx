@@ -1,6 +1,4 @@
-import clsx from 'clsx';
-
-import classes from './Tag.module.scss';
+import classes from './Tag.module.css';
 
 type TagProps = {
   projectName: string;
@@ -12,7 +10,7 @@ const getFormattedDate = (date: string) => new Date(date).toLocaleDateString();
 
 const Tag = ({ projectName, label, date }: TagProps) => {
   return (
-    <div className={clsx(classes.tag, classes[projectName])}>
+    <div className={classes.tag} data-theme={projectName}>
       <span className={classes.label}>{label}</span>
       <span className={classes.date}>{getFormattedDate(date)}</span>
     </div>

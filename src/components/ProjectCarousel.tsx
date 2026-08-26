@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import { Carousel, useCarousel } from 'nuka-carousel';
 
-import classes from './ProjectCarousel.module.scss';
+import classes from './ProjectCarousel.module.css';
 
 type ProjectCarouselProps = {
   snapshots: string[];

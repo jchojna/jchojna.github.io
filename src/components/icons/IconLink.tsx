@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 
 import icons from '../../assets/svg/icons.svg';
-import classes from './IconLink.module.scss';
+import classes from './IconLink.module.css';
 
 type IconLink = {
   details: {
@@ -15,9 +15,9 @@ type IconLink = {
 };
 
 const IconLink = ({ details, view, large = false }: IconLink) => {
-  const iconClass = clsx(classes.icon, classes[view], large && classes.large);
+  const iconClass = clsx(classes.icon, large && classes.large);
   return (
-    <li className={iconClass}>
+    <li className={iconClass} data-theme={view}>
       <a
         href={details.url}
         className={classes.link}

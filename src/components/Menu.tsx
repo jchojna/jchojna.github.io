@@ -10,7 +10,7 @@ import {
 import CurrentViewContext from '../views/CurrentViewContext';
 import MenuButton from './MenuButton';
 
-import classes from './Menu.module.scss';
+import classes from './Menu.module.css';
 
 type MenuProps = {
   isMenuMode: boolean;
@@ -81,9 +81,9 @@ const Menu = ({
         data-id="indicator"
         className={clsx(
           classes.indicator,
-          isMenuMode && classes.intro,
-          classes[menuItems[currentSectionIndex].label]
+          isMenuMode && classes.intro
         )}
+        data-theme={menuItems[currentSectionIndex].label}
       ></div>
       <nav className={menuClass}>
         <ul ref={menuListRef} className={classes.menuList}>

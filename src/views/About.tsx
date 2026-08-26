@@ -10,7 +10,8 @@ import menuItems from '../content/menu.json';
 import { getViewLocation } from '../utils/utils';
 import CurrentViewContext from './CurrentViewContext';
 
-import classes from './About.module.scss';
+import layout from '../styles/layout.module.css';
+import classes from './About.module.css';
 
 const About = () => {
   const [currentView] = useContext(CurrentViewContext);
@@ -22,15 +23,15 @@ const About = () => {
   );
 
   return (
-    <div id="about" className={clsx(classes.section, classes.about)}>
+    <div id="about" className={layout.section} data-theme="about">
       <div
         className={clsx(
+          layout.container,
           classes.container,
-          classes.about,
-          viewLocation && classes[viewLocation]
+          viewLocation && layout[viewLocation]
         )}
       >
-        <h2 className={clsx(classes.title, classes.large, classes.about)}>
+        <h2 className={clsx(layout.sectionTitle, classes.title)}>
           {about.title}
         </h2>
 
@@ -40,7 +41,9 @@ const About = () => {
           alt="My photo"
         />
 
-        <p className={classes.description}>{about.description}</p>
+        <p className={clsx(layout.normalText, classes.description)}>
+          {about.description}
+        </p>
 
         <div className={classes.contactDetails}>
           {contactDetails.map((details, index) => (

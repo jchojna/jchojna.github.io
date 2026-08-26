@@ -1,0 +1,38 @@
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  grid-template-areas:
+    'title'
+    'form'
+    'social'
+    'footer';
+  max-width: 1000px;
+  width: 100%;
+
+  @media only screen and (min-width: 1201px) {
+    align-content: stretch;
+    align-items: center;
+    grid-template-areas:
+      'title'
+      'form   '
+      'social '
+      'footer ';
+    grid-template-rows: auto 1fr;
+  }
+}
+
+.title {
+  border-color: var(--theme-accent);
+  color: var(--theme-light);
+  margin: 0;
+  text-align: center;
+}
+
+.contactDetails {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}

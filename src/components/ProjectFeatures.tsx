@@ -1,15 +1,14 @@
-import clsx from 'clsx';
 import { useState } from 'react';
 
 import Accordion from './Accordion';
 
-import classes from './ProjectFeatures.module.scss';
+import classes from './ProjectFeatures.module.css';
 
 const ProjectFeatures = ({ projectName, content }: ProjectFeaturesProps) => {
   const [expanded, setExpanded] = useState<string | null>(null);
 
   return (
-    <div className={clsx(classes.features, classes[projectName])}>
+    <div className={classes.features} data-theme={projectName}>
       <div className={classes.accordions}>
         {content.map(({ label, items }, index) => {
           return (

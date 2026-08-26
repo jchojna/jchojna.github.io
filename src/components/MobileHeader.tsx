@@ -2,7 +2,7 @@ import clsx from 'clsx';
 
 import MobileMenu from './MobileMenu';
 
-import classes from './MobileHeader.module.scss';
+import classes from './MobileHeader.module.css';
 
 type MobileHeaderProps = {
   isMenuMode: boolean;

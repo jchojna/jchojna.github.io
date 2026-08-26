@@ -1,0 +1,120 @@
+.section {
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    color-mix(
+        in srgb,
+        color-mix(in srgb, var(--theme-prev) 50%, var(--theme)) 30%,
+        transparent
+      )
+      0%,
+    color-mix(in srgb, var(--theme) 30%, transparent) 50%,
+    color-mix(
+        in srgb,
+        color-mix(in srgb, var(--theme) 50%, var(--theme-next)) 30%,
+        transparent
+      )
+      100%
+  );
+  display: flex;
+  justify-content: center;
+  max-height: none;
+  min-height: 100vh;
+  position: relative;
+  scroll-snap-align: start;
+  width: 100%;
+
+  @media only screen and (min-width: 1201px) {
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    padding-left: calc(var(--menu-width-m) + 100px);
+  }
+
+  @media only screen and (min-width: 1681px) {
+    justify-content: center;
+    padding-left: calc(var(--menu-width-l) + 100px);
+  }
+}
+
+.animatedContainer {
+  @media only screen and (min-width: 1201px) {
+    opacity: 1;
+    transform: translateY(0);
+    transition:
+      opacity 1s,
+      transform 0.3s ease-out;
+  }
+}
+
+.prev {
+  @media only screen and (min-width: 1201px) {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+}
+
+.next {
+  @media only screen and (min-width: 1201px) {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+}
+
+.container {
+  align-content: stretch;
+  align-items: start;
+  column-gap: 60px;
+  display: grid;
+  gap: 25px;
+  padding: 0 var(--offset-right-s) var(--menu-item-height) var(--offset-left-s);
+  width: 100%;
+
+  @media only screen and (min-width: 1201px) {
+    margin-right: 100px;
+    opacity: 1;
+    padding: 0;
+    transform: translateY(0);
+    transition:
+      opacity 1s,
+      transform 0.3s ease-out;
+  }
+}
+
+.sectionTitle {
+  font-size: 60px;
+  grid-area: title;
+  line-height: 1.2;
+  margin: 0;
+  margin-bottom: 30px;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+
+  @media only screen and (min-width: 1201px) {
+    border: none;
+    font-size: 60px;
+    margin: 0;
+    max-width: 60%;
+    min-width: 380px;
+    padding: 0;
+    width: 100%;
+  }
+
+  @media only screen and (min-width: 1681px) {
+    max-width: none;
+  }
+}
+
+.normalText {
+  color: var(--theme-white);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin: 0;
+  padding: 0;
+  padding-left: var(--text-indent);
+
+  @media screen and (min-width: 1201px) {
+    padding-left: 0;
+  }
+}

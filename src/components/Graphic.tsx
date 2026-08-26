@@ -1,8 +1,6 @@
-import clsx from 'clsx';
-
 import graphics from '../assets/svg/graphics.svg';
 
-import classes from './Graphic.module.scss';
+import classes from './Graphic.module.css';
 
 type GraphicProps = {
   view: string;
@@ -23,7 +21,7 @@ const svgObj = (
 
 const Graphic = ({ view }: GraphicProps) => {
   return (
-    <div className={clsx(classes.graphic, classes[view])}>
+    <div className={classes.graphic} data-theme={view}>
       {view === 'tasktimer' ? (
         <>
           {svgObj(view, 'base', 612)}

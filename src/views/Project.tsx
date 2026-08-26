@@ -12,7 +12,8 @@ import IconsList from '../components/icons/IconsList';
 import menuItems from '../content/menu.json';
 import { getViewLocation } from '../utils/utils';
 import CurrentViewContext from './CurrentViewContext';
-import classes from './Project.module.scss';
+import layout from '../styles/layout.module.css';
+import classes from './Project.module.css';
 
 const Globe = lazy(() => import('../components/Globe'));
 const ProjectCarousel = lazy(() => import('../components/ProjectCarousel'));
@@ -50,12 +51,17 @@ const Project = ({
   );
 
   return (
-    <div id={name} className={clsx(classes.section, classes[name])}>
+    <div
+      id={name}
+      className={clsx(layout.section, classes.section)}
+      data-theme={name}
+    >
       <Graphic view={name} />
       <div
         className={clsx(
+          layout.animatedContainer,
           classes.container,
-          viewLocation && !isMobile && classes[viewLocation]
+          viewLocation && !isMobile && layout[viewLocation]
         )}
       >
         <div className={clsx(classes.content)}>

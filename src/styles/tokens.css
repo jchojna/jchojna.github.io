@@ -1,0 +1,123 @@
+:root {
+  /* Breakpoints (custom properties cannot be used in @media):
+     s: 769px, m: 1201px, l: 1681px */
+
+  /* Menu */
+  --menu-sm-first-timeout: 0.3s;
+  --menu-sm-second-timeout: 0.5s;
+  --menu-item-height: 40px;
+  --menu-item-height-l: 65px;
+
+  --border-radius: 10px;
+
+  /* Navigation */
+  --navigation-border-arrow: 10px;
+  --navigation-offset: 70px;
+  --navigation-padding: 20px;
+  --navigation-size-arrows: 90px;
+  --navigation-size-back: 72px;
+  --navigation-size-button: 130px;
+  --navigation-time: 0.3s;
+  --navigation-time-delay: 1s;
+  --navigation-time-rotate: 0.2s;
+
+  /* Layout */
+  --offset-left-s: 15px;
+  --offset-right-s: 15px;
+  --container-size: 800px;
+  --menu-width-m: 250px;
+  --menu-width-l: 400px;
+  --mobile-menu-offset-top: 100px;
+  --text-indent: 25px;
+  --tab-heading-size-xs: 30px;
+  --tab-heading-size-lg: 30px;
+  --separator-width: 10px;
+  --separator-height: 60px;
+  --svg-opacity: 1;
+  --background-opacity: 0.7;
+
+  /* Time */
+  --tab-header-time: 0.2s;
+  --accordion-time: 0.5s;
+  --button-hover: 0.3s;
+  --menu-button-time: 0.2s;
+  --time-menu-indicator: 0.6s;
+
+  /* Intro */
+  --intro-background-color: rgb(30, 30, 30);
+  --intro-link-color: rgb(60, 60, 60);
+
+  /* About */
+  --color-about: #24b1dc;
+  --color-about-accent: #03d4c3;
+  --color-about-white: color-mix(in srgb, var(--color-about) 20%, white);
+  --color-about-light: color-mix(in srgb, var(--color-about) 40%, white);
+  --color-about-dark: color-mix(in srgb, var(--color-about) 20%, black);
+  --color-about-black: color-mix(in srgb, var(--color-about) 10%, black);
+
+  /* Resume */
+  --color-resume: #0980cf;
+  --color-resume-accent: #b02f4d;
+  --color-resume-white: color-mix(in srgb, var(--color-resume) 20%, white);
+  --color-resume-light: color-mix(in srgb, var(--color-resume) 40%, white);
+  --color-resume-dark: color-mix(in srgb, var(--color-resume) 20%, black);
+  --color-resume-black: color-mix(in srgb, var(--color-resume) 10%, black);
+
+  /* GH-Users */
+  --color-ghUsers: #4b3ddb;
+  --color-ghUsers-accent: #59aff6;
+  --color-ghUsers-white: color-mix(in srgb, var(--color-ghUsers) 20%, white);
+  --color-ghUsers-light: color-mix(in srgb, var(--color-ghUsers) 40%, white);
+  --color-ghUsers-dark: color-mix(in srgb, var(--color-ghUsers) 20%, black);
+  --color-ghUsers-black: color-mix(in srgb, var(--color-ghUsers) 10%, black);
+
+  /* Glob3D */
+  --color-glob3d: #8945dc;
+  --color-glob3d-accent: #e5a110;
+  --color-glob3d-white: color-mix(in srgb, var(--color-glob3d) 20%, white);
+  --color-glob3d-light: color-mix(in srgb, var(--color-glob3d) 40%, white);
+  --color-glob3d-dark: color-mix(in srgb, var(--color-glob3d) 20%, black);
+  --color-glob3d-black: color-mix(in srgb, var(--color-glob3d) 10%, black);
+
+  /* Tasktimer */
+  --color-tasktimer: #c045dc;
+  --color-tasktimer-accent: #44b7b9;
+  --color-tasktimer-white: color-mix(in srgb, var(--color-tasktimer) 20%, white);
+  --color-tasktimer-light: color-mix(in srgb, var(--color-tasktimer) 40%, white);
+  --color-tasktimer-dark: color-mix(in srgb, var(--color-tasktimer) 20%, black);
+  --color-tasktimer-black: color-mix(in srgb, var(--color-tasktimer) 10%, black);
+  --color-tasktimer-letter: #703035;
+  --color-tasktimer-letterShadow: #441c20;
+
+  /* Hydrapp */
+  --color-hydrapp: #dc45c5;
+  --color-hydrapp-accent: #48bef9;
+  --color-hydrapp-white: color-mix(in srgb, var(--color-hydrapp) 20%, white);
+  --color-hydrapp-light: color-mix(in srgb, var(--color-hydrapp) 40%, white);
+  --color-hydrapp-dark: color-mix(in srgb, var(--color-hydrapp) 20%, black);
+  --color-hydrapp-black: color-mix(in srgb, var(--color-hydrapp) 10%, black);
+
+  /* Portfolio */
+  --color-portfolio: #dc45a2;
+  --color-portfolio-accent: #68983a;
+  --color-portfolio-white: color-mix(in srgb, var(--color-portfolio) 20%, white);
+  --color-portfolio-light: color-mix(in srgb, var(--color-portfolio) 40%, white);
+  --color-portfolio-dark: color-mix(in srgb, var(--color-portfolio) 20%, black);
+  --color-portfolio-black: color-mix(in srgb, var(--color-portfolio) 10%, black);
+
+  /* Archviz */
+  --color-archviz: #dc4572;
+  --color-archviz-accent: #e4ac29;
+  --color-archviz-white: color-mix(in srgb, var(--color-archviz) 20%, white);
+  --color-archviz-light: color-mix(in srgb, var(--color-archviz) 40%, white);
+  --color-archviz-dark: color-mix(in srgb, var(--color-archviz) 20%, black);
+  --color-archviz-black: color-mix(in srgb, var(--color-archviz) 10%, black);
+
+  /* Contact */
+  --color-contact: #ce1e42;
+  --color-contact-accent: #2dbdd3;
+  --color-contact-white: color-mix(in srgb, var(--color-contact) 20%, white);
+  --color-contact-light: color-mix(in srgb, var(--color-contact) 40%, white);
+  --color-contact-dark: color-mix(in srgb, var(--color-contact) 20%, black);
+  --color-contact-black: color-mix(in srgb, var(--color-contact) 10%, black);
+}

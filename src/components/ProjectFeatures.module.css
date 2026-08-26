@@ -1,0 +1,40 @@
+.features {
+  grid-area: features;
+}
+
+.accordions {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 25px;
+
+  @media screen and (min-width: 1201px) {
+    padding-left: 0;
+  }
+}
+
+.feature {
+  color: var(--theme-white);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin: 0;
+  padding: 0;
+  padding-left: var(--text-indent);
+  position: relative;
+
+  &::before {
+    background-color: var(--theme-light);
+    content: '';
+    height: var(--separator-width);
+    left: 0;
+    margin-top: 8px;
+    position: absolute;
+    top: 0;
+    width: var(--separator-width);
+  }
+
+  @media screen and (min-width: 1201px) {
+    padding-left: 20px;
+  }
+}

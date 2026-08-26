@@ -8,7 +8,7 @@ import Burger from './Burger';
 import MenuBackground from './MenuBackground';
 import MobileMenuButton from './MobileMenuButton';
 
-import classes from './MobileMenu.module.scss';
+import classes from './MobileMenu.module.css';
 
 type MobileMenuProps = {
   isMenuMode: boolean;
@@ -88,9 +88,9 @@ const MobileMenu = ({
         ref={indicatorRef}
         className={clsx(
           classes.indicator,
-          classes[activeView],
           isMenuMode && classes.visible
         )}
+        data-theme={activeView}
       ></div>
       <nav className={menuClass}>
         <ul className={classes.menuList}>

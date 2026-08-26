@@ -1,0 +1,57 @@
+.graphic {
+  align-items: center;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  justify-self: start;
+  margin: 50px 0;
+  position: relative;
+  transform-origin: bottom left;
+  width: 60%;
+
+  @media only screen and (min-width: 1201px) {
+    margin: 0;
+    max-width: 400px;
+    opacity: 0.3;
+    position: absolute;
+    right: 0;
+    top: 50px;
+  }
+
+  @media only screen and (min-width: 1681px) {
+    max-width: 500px;
+  }
+}
+
+.base {
+  fill: var(--theme-dark);
+  width: 100%;
+}
+
+.shadow {
+  fill: var(--theme-black);
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.letter,
+.letterShadow {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.letter {
+  fill: var(--color-tasktimer-accent);
+}
+
+.letterShadow {
+  fill: color-mix(
+    in srgb,
+    var(--color-tasktimer-accent) 50%,
+    var(--color-tasktimer-black)
+  );
+}

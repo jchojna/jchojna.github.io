@@ -1,0 +1,78 @@
+.item {
+  --size-icon-s: 40px;
+  --size-icon-m: 50px;
+
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-width: var(--size-icon-s);
+  transition: transform 0.1s;
+  width: var(--size-icon-s);
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    background-color: color-mix(
+      in srgb,
+      var(--theme-black) calc(var(--background-opacity) * 100%),
+      transparent
+    );
+    fill: var(--theme);
+  }
+
+  &::before {
+    border-color: var(--theme-black);
+  }
+
+  @media only screen and (min-width: 1201px) {
+    min-width: var(--size-icon-m);
+    width: var(--size-icon-m);
+  }
+}
+
+.icon {
+  background-color: var(--theme-dark);
+  border-radius: var(--border-radius);
+  fill: var(--theme-light);
+  height: var(--size-icon-s);
+  outline: none;
+  position: relative;
+  width: 100%;
+
+  @media only screen and (min-width: 1201px) {
+    height: var(--size-icon-m);
+  }
+}
+
+.svg {
+  height: 100%;
+  width: 100%;
+
+  &.faded1,
+  &.faded2 {
+    height: 100%;
+    left: 0;
+    opacity: 0.75;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  &.faded2 {
+    opacity: 0.5;
+  }
+}
+
+.name {
+  color: var(--theme-light);
+  font-size: 10px;
+  margin: 2px 0 4px;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  @media only screen and (min-width: 1681px) {
+    font-size: 0.75em;
+  }
+}
