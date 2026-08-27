@@ -74,6 +74,10 @@
             "totalSVG": 1
           },
           {
+            "name": "websocket",
+            "totalSVG": 1
+          },
+          {
             "name": "deno",
             "totalSVG": 1
           },
