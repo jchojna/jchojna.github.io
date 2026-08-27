@@ -10,7 +10,8 @@ import menuItems from '../content/menu.json';
 import { getViewLocation } from '../utils/utils';
 import CurrentViewContext from './CurrentViewContext';
 
-import classes from './About.module.scss';
+import layout from '../styles/layout.module.css';
+import classes from './About.module.css';
 
 const About = () => {
   const [currentView] = useContext(CurrentViewContext);
@@ -22,35 +23,40 @@ const About = () => {
   );
 
   return (
-    <div id="about" className={clsx(classes.section, classes.about)}>
+    <div id="about" className={layout.section} data-theme="about">
       <div
         className={clsx(
+          layout.container,
           classes.container,
-          classes.about,
-          viewLocation && classes[viewLocation]
+          viewLocation && layout[viewLocation]
         )}
       >
-        <h2 className={clsx(classes.title, classes.large, classes.about)}>
+        <h2 className={clsx(layout.sectionTitle, classes.title)}>
           {about.title}
         </h2>
 
-        <img
-          src="assets/img/photo.jpeg"
-          className={classes.photo}
-          alt="My photo"
-        />
+        <div className={classes.descriptionContainer}>
+          <p className={clsx(layout.normalText, classes.description)}>
+            {about.description}
+          </p>
 
-        <p className={classes.description}>{about.description}</p>
-
-        <div className={classes.contactDetails}>
-          {contactDetails.map((details, index) => (
-            <IconLink key={index} details={details} view="about" />
-          ))}
+          <div className={classes.contactDetails}>
+            {contactDetails.map((details, index) => (
+              <IconLink key={index} details={details} view="about" />
+            ))}
+          </div>
         </div>
 
-        <div className={clsx(classes.iconsGroup, classes.high)}>
-          <BlockTitle title={about.highLevel.title} view="about" />
-          <IconsList view="about" icons={about.highLevel.tech} />
+        <div className={classes.technologies}>
+          <BlockTitle title={about.technologies.title} view="about" />
+          <div className={classes.techGroups}>
+            {about.technologies.items.map((group) => (
+              <div key={group.label} className={classes.techGroup}>
+                <h4 className={classes.techGroupTitle}>{group.label}</h4>
+                <IconsList view="about" icons={group.tech} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

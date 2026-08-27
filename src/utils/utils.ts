@@ -35,7 +35,7 @@ export const getRelativeTopOffset = (
 };
 
 export const scrollToSection = (
-  sectionsRef: React.RefObject<HTMLDivElement>,
+  sectionsRef: React.RefObject<HTMLDivElement | null>,
   targetSectionIndex: number,
   isSmooth: boolean = true
 ) => {

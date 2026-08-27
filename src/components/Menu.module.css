@@ -1,0 +1,87 @@
+.menu {
+  pointer-events: all;
+  position: relative;
+  width: 100%;
+
+  @media only screen and (min-width: 1201px) {
+    align-items: center;
+    display: flex;
+    min-height: var(--container-size);
+    transition: transform 0.5s;
+    width: var(--menu-width-m);
+
+    &.intro {
+      transform: translateX(calc(50vw - var(--menu-width-m)));
+    }
+  }
+
+  @media screen and (min-width: 1681px) {
+    width: var(--menu-width-l);
+
+    &.intro {
+      transform: translateX(calc(50vw - var(--menu-width-l)));
+    }
+  }
+}
+
+.menuList {
+  display: grid;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  row-gap: 10px;
+  width: 100%;
+}
+
+.menuItem {
+  align-items: flex-start;
+  display: flex;
+  height: var(--menu-item-height);
+  overflow: hidden;
+  padding-right: 10px;
+  width: 100%;
+
+  @media only screen and (min-width: 1201px) {
+    justify-content: flex-end;
+    padding: 0;
+    width: 100%;
+  }
+
+  @media only screen and (min-width: 1681px) {
+    height: var(--menu-item-height-l);
+  }
+}
+
+.menuItem--mobileHeader {
+  left: 0;
+  margin: 0;
+  position: fixed;
+}
+
+.menuItem--animated {
+  transition: top var(--menu-sm-second-timeout);
+}
+
+.menuItem--visible {
+  visibility: inherit;
+}
+
+.indicator {
+  background-color: var(--theme-accent, #fff);
+  border-radius: 0 calc(var(--border-radius) / 2) calc(var(--border-radius) / 2)
+    0;
+  height: var(--menu-item-height);
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 20px;
+  z-index: 9999;
+
+  &.intro {
+    border-radius: calc(var(--border-radius) / 2);
+  }
+
+  @media only screen and (min-width: 1681px) {
+    height: var(--menu-item-height-l);
+  }
+}

@@ -1,10 +1,37 @@
 import clsx from 'clsx';
-import Carousel from 'nuka-carousel';
+import { Carousel, useCarousel } from 'nuka-carousel';
 
-import classes from './ProjectCarousel.module.scss';
+import classes from './ProjectCarousel.module.css';
 
 type ProjectCarouselProps = {
   snapshots: string[];
+};
+
+const CarouselArrows = () => {
+  const { currentPage, totalPages, goBack, goForward } = useCarousel();
+
+  return (
+    <>
+      <button
+        aria-label="Previous slide"
+        className={clsx(classes.navButton, classes.previous)}
+        disabled={currentPage === 0}
+        onClick={goBack}
+        type="button"
+      >
+        <span className={clsx(classes.arrow, classes.left)} />
+      </button>
+      <button
+        aria-label="Next slide"
+        className={clsx(classes.navButton, classes.next)}
+        disabled={currentPage >= totalPages - 1}
+        onClick={goForward}
+        type="button"
+      >
+        <span className={clsx(classes.arrow, classes.right)} />
+      </button>
+    </>
+  );
 };
 
 const ProjectCarousel = ({ snapshots }: ProjectCarouselProps) => {
@@ -12,17 +39,11 @@ const ProjectCarousel = ({ snapshots }: ProjectCarouselProps) => {
     <div className={classes.projectCarousel}>
       {snapshots.length > 0 && (
         <Carousel
-          defaultControlsConfig={{
-            prevButtonText: (
-              <div className={clsx(classes.arrow, classes.left)}></div>
-            ),
-            nextButtonText: (
-              <div className={clsx(classes.arrow, classes.right)}></div>
-            ),
-          }}
+          arrows={<CarouselArrows />}
+          showArrows="always"
         >
           {snapshots.map((img, index) => (
-            <img key={index} src={img} />
+            <img alt="" key={index} src={img} />
           ))}
         </Carousel>
       )}

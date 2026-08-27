@@ -1,0 +1,29 @@
+.accordionsGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title {
+  background: none;
+  border: none;
+  color: var(--color-resume-light);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.titled {
+  .items {
+    padding-left: var(--text-indent);
+  }
+}

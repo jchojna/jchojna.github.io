@@ -1,0 +1,98 @@
+[data-theme='about'] {
+  --theme: var(--color-about);
+  --theme-accent: var(--color-about-accent);
+  --theme-white: var(--color-about-white);
+  --theme-light: var(--color-about-light);
+  --theme-dark: var(--color-about-dark);
+  --theme-black: var(--color-about-black);
+  --theme-prev: var(--color-about);
+  --theme-next: var(--color-resume);
+}
+
+[data-theme='resume'] {
+  --theme: var(--color-resume);
+  --theme-accent: var(--color-resume-accent);
+  --theme-white: var(--color-resume-white);
+  --theme-light: var(--color-resume-light);
+  --theme-dark: var(--color-resume-dark);
+  --theme-black: var(--color-resume-black);
+  --theme-prev: var(--color-about);
+  --theme-next: var(--color-ghUsers);
+}
+
+[data-theme='ghUsers'] {
+  --theme: var(--color-ghUsers);
+  --theme-accent: var(--color-ghUsers-accent);
+  --theme-white: var(--color-ghUsers-white);
+  --theme-light: var(--color-ghUsers-light);
+  --theme-dark: var(--color-ghUsers-dark);
+  --theme-black: var(--color-ghUsers-black);
+  --theme-prev: var(--color-resume);
+  --theme-next: var(--color-glob3d);
+}
+
+[data-theme='glob3d'] {
+  --theme: var(--color-glob3d);
+  --theme-accent: var(--color-glob3d-accent);
+  --theme-white: var(--color-glob3d-white);
+  --theme-light: var(--color-glob3d-light);
+  --theme-dark: var(--color-glob3d-dark);
+  --theme-black: var(--color-glob3d-black);
+  --theme-prev: var(--color-ghUsers);
+  --theme-next: var(--color-tasktimer);
+}
+
+[data-theme='tasktimer'] {
+  --theme: var(--color-tasktimer);
+  --theme-accent: var(--color-tasktimer-accent);
+  --theme-white: var(--color-tasktimer-white);
+  --theme-light: var(--color-tasktimer-light);
+  --theme-dark: var(--color-tasktimer-dark);
+  --theme-black: var(--color-tasktimer-black);
+  --theme-prev: var(--color-glob3d);
+  --theme-next: var(--color-hydrapp);
+}
+
+[data-theme='hydrapp'] {
+  --theme: var(--color-hydrapp);
+  --theme-accent: var(--color-hydrapp-accent);
+  --theme-white: var(--color-hydrapp-white);
+  --theme-light: var(--color-hydrapp-light);
+  --theme-dark: var(--color-hydrapp-dark);
+  --theme-black: var(--color-hydrapp-black);
+  --theme-prev: var(--color-tasktimer);
+  --theme-next: var(--color-portfolio);
+}
+
+[data-theme='portfolio'] {
+  --theme: var(--color-portfolio);
+  --theme-accent: var(--color-portfolio-accent);
+  --theme-white: var(--color-portfolio-white);
+  --theme-light: var(--color-portfolio-light);
+  --theme-dark: var(--color-portfolio-dark);
+  --theme-black: var(--color-portfolio-black);
+  --theme-prev: var(--color-hydrapp);
+  --theme-next: var(--color-archviz);
+}
+
+[data-theme='archviz'] {
+  --theme: var(--color-archviz);
+  --theme-accent: var(--color-archviz-accent);
+  --theme-white: var(--color-archviz-white);
+  --theme-light: var(--color-archviz-light);
+  --theme-dark: var(--color-archviz-dark);
+  --theme-black: var(--color-archviz-black);
+  --theme-prev: var(--color-portfolio);
+  --theme-next: var(--color-contact);
+}
+
+[data-theme='contact'] {
+  --theme: var(--color-contact);
+  --theme-accent: var(--color-contact-accent);
+  --theme-white: var(--color-contact-white);
+  --theme-light: var(--color-contact-light);
+  --theme-dark: var(--color-contact-dark);
+  --theme-black: var(--color-contact-black);
+  --theme-prev: var(--color-archviz);
+  --theme-next: var(--color-contact);
+}

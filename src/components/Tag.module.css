@@ -1,0 +1,23 @@
+.tag {
+  background-color: var(--theme-dark);
+  border-radius: var(--border-radius);
+  color: var(--theme-white);
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  height: 100%;
+  padding: 5px 10px;
+}
+
+.label {
+  color: var(--theme-light);
+  font-size: 0.8rem;
+
+  &::after {
+    content: ':';
+  }
+}
+
+.date {
+  font-weight: 600;
+}

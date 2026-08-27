@@ -2,21 +2,20 @@ import clsx from 'clsx';
 import { useContext } from 'react';
 import { useMediaQuery } from 'react-responsive';
 
-import AccordionsGroup from '../components/AccordionsGroup';
+import attachments from '../content/attachments.json';
 import BlockTitle from '../components/BlockTitle';
 import Graphic from '../components/Graphic';
+import IconLink from '../components/icons/IconLink';
 import menuItems from '../content/menu.json';
 import resume from '../content/resume.json';
 import { getViewLocation } from '../utils/utils';
 import CurrentViewContext from './CurrentViewContext';
-import classes from './Resume.module.scss';
+import layout from '../styles/layout.module.css';
+import classes from './Resume.module.css';
 
 const Resume = () => {
   const [currentView] = useContext(CurrentViewContext);
   const isMobile = useMediaQuery({ query: '(max-width: 1200px)' });
-
-  const { experience, education, languages } = resume;
-  const { label, items } = experience;
 
   const viewLocation = getViewLocation(
     currentView,
@@ -25,27 +24,31 @@ const Resume = () => {
   );
 
   return (
-    <div id="resume" className={clsx(classes.section, classes.resume)}>
+    <div id="resume" className={layout.section} data-theme="resume">
       {!isMobile && <Graphic view="resume" />}
       <div
         className={clsx(
+          layout.container,
           classes.container,
-          classes.resume,
-          viewLocation && classes[viewLocation]
+          viewLocation && layout[viewLocation]
         )}
       >
-        <h2 className={classes.title}>{resume.title}</h2>
+        <h2 className={clsx(layout.sectionTitle, classes.title)}>
+          {resume.title}
+        </h2>
         <div className={classes.info}>
           <BlockTitle title={resume.info.heading} view="resume" />
-          <p className={classes.description}>{resume.info.description}</p>
+          <p className={layout.normalText}>{resume.info.description}</p>
         </div>
-        <div className={classes.accordions}>
-          <AccordionsGroup
-            accordions={items}
-            title={label}
-            defaultExpanded="Frontend Development"
-          />
-          <AccordionsGroup accordions={[education, languages]} />
+        <div className={classes.attachments}>
+          {attachments.map((attachment) => (
+            <IconLink
+              key={attachment.id}
+              details={attachment}
+              view="resume"
+              large={true}
+            />
+          ))}
         </div>
       </div>
     </div>

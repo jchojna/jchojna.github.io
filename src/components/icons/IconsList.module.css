@@ -1,0 +1,13 @@
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  grid-area: icons;
+  margin: 0;
+  padding: 0;
+  padding-left: var(--text-indent);
+
+  @media screen and (min-width: 1201px) {
+    padding-left: 0;
+  }
+}

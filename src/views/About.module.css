@@ -1,0 +1,86 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.title {
+  border-color: var(--theme-accent);
+  color: var(--theme-light);
+  margin: 0;
+  margin-top: 100px;
+}
+
+.descriptionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.description {
+  max-width: 600px;
+}
+
+.photo {
+  border-radius: calc(var(--border-radius) * 2);
+  max-width: 500px;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+  width: 100%;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.contactDetails {
+  display: flex;
+  gap: 6px;
+  list-style-type: none;
+  padding-left: var(--text-indent);
+
+  @media screen and (min-width: 1201px) {
+    padding-left: 0;
+  }
+}
+
+.technologies {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.techGroups {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 10px;
+  column-gap: 30px;
+  padding-left: var(--text-indent);
+
+  @media screen and (min-width: 1201px) {
+    grid-template-columns: auto 1fr;
+    padding-left: 0;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+}
+
+.techGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.techGroupTitle {
+  color: var(--theme-accent);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  margin: 0;
+  text-transform: uppercase;
+}

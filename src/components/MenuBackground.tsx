@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import { useEffect, useRef, useState } from 'react';
 
-import classes from './MenuBackground.module.scss';
+import classes from './MenuBackground.module.css';
 
 type MenuBackgroundProps = {
   isMenuMode: boolean;
@@ -62,9 +62,9 @@ const MenuBackground = ({
           classes.background,
           classes.top,
           isAnimated && classes.animated,
-          !isMenuMode && activeView && classes[activeView],
           isMenuMode && classes.menuMode
         )}
+        data-theme={!isMenuMode ? activeView : undefined}
       ></div>
       <div
         ref={backgroundBottom}

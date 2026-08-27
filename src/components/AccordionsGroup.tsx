@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Accordion from './Accordion';
 import ResumeDetails from './resume/ResumeDetails';
 
-import classes from './AccordionsGroup.module.scss';
+import classes from './AccordionsGroup.module.css';
 import BlockTitle from './BlockTitle';
 
 const AccordionsGroup = ({

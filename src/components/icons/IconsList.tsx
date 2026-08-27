@@ -1,6 +1,6 @@
 import Icon from './Icon';
 
-import classes from './IconsList.module.scss';
+import classes from './IconsList.module.css';
 
 const IconsList = ({ view, icons }: IconsList) => {
   return (

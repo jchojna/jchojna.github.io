@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 
-import classes from './ResumeDetails.module.scss';
+import classes from './ResumeDetails.module.css';
 
 type ResumeDetailsProps = {
   label?: string;

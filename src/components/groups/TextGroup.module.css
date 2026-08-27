@@ -1,0 +1,20 @@
+.textBlock {
+  grid-area: description;
+}
+
+.paragraphs {
+  color: var(--theme-white);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.paragraph {
+  margin: 0;
+
+  @media screen and (max-width: 1200px) {
+    padding-left: var(--text-indent);
+  }
+}

@@ -1,3 +1,7 @@
+@import './styles/tokens.css';
+@import './styles/theme.css';
+@import './styles/animations.css';
+
 :root {
   font-family: Antonio, 'Open Sans', sans-serif;
   line-height: 1.7;

@@ -1,6 +1,6 @@
 import { GridLoader } from 'react-spinners';
 
-import classes from './Loader.module.scss';
+import classes from './Loader.module.css';
 
 const Loader = () => {
   return (

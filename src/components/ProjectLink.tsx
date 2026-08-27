@@ -1,6 +1,4 @@
-import clsx from 'clsx';
-
-import classes from './ProjectLink.module.scss';
+import classes from './ProjectLink.module.css';
 
 type ProjectLinkProps = {
   projectName: string;
@@ -11,7 +9,8 @@ type ProjectLinkProps = {
 const ProjectLink = ({ projectName, url, label }: ProjectLinkProps) => (
   <a
     href={url}
-    className={clsx(classes.link, classes[projectName])}
+    className={classes.link}
+    data-theme={projectName}
     target="_blank"
     rel="nofollow noreferrer"
     aria-label={`${projectName} app ${label}`}

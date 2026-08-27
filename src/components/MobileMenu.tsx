@@ -8,12 +8,12 @@ import Burger from './Burger';
 import MenuBackground from './MenuBackground';
 import MobileMenuButton from './MobileMenuButton';
 
-import classes from './MobileMenu.module.scss';
+import classes from './MobileMenu.module.css';
 
 type MobileMenuProps = {
   isMenuMode: boolean;
   setMenuMode: (isMenuMode: boolean) => void;
-  sectionsRef: React.RefObject<HTMLDivElement>;
+  sectionsRef: React.RefObject<HTMLDivElement | null>;
   setIndicatorRef: (indicatorRef: HTMLDivElement | null) => void;
 };
 
@@ -88,9 +88,9 @@ const MobileMenu = ({
         ref={indicatorRef}
         className={clsx(
           classes.indicator,
-          classes[activeView],
           isMenuMode && classes.visible
         )}
+        data-theme={activeView}
       ></div>
       <nav className={menuClass}>
         <ul className={classes.menuList}>

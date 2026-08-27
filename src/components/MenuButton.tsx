@@ -5,7 +5,7 @@ import menuSvg from '../assets/svg/menu.svg';
 import { scrollToSection } from '../utils/utils';
 import CurrentViewContext from '../views/CurrentViewContext';
 
-import classes from './MenuButton.module.scss';
+import classes from './MenuButton.module.css';
 
 type MenuButtonProps = {
   index: number;
@@ -13,7 +13,7 @@ type MenuButtonProps = {
   width: number;
   isMenuMode: boolean;
   isActive?: boolean;
-  sectionsRef: React.RefObject<HTMLDivElement>;
+  sectionsRef: React.RefObject<HTMLDivElement | null>;
   setMenuMode: (isMenuMode: boolean) => void;
 };
 
@@ -30,7 +30,6 @@ const MenuButton = ({
   const buttonClass = clsx({
     [classes.menuButton]: true,
     [classes.intro]: isMenuMode,
-    [classes[label]]: true,
     [classes.active]: isActive,
   });
   const shadowClass = clsx({
@@ -50,6 +49,7 @@ const MenuButton = ({
     <a
       ref={buttonRef}
       className={buttonClass}
+      data-theme={label}
       data-button-active={isActive}
       data-menu-mode={isMenuMode}
       onClick={() => handleClick(index)}

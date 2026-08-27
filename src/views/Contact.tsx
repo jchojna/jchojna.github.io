@@ -5,7 +5,8 @@ import IconLink from '../components/icons/IconLink';
 import contactDetails from '../content/contactDetails.json';
 import menuItems from '../content/menu.json';
 import { getViewLocation } from '../utils/utils';
-import classes from './Contact.module.scss';
+import layout from '../styles/layout.module.css';
+import classes from './Contact.module.css';
 import CurrentViewContext from './CurrentViewContext';
 
 const Contact = () => {
@@ -18,15 +19,15 @@ const Contact = () => {
   );
 
   return (
-    <div id="contact" className={clsx(classes.section, classes.contact)}>
+    <div id="contact" className={layout.section} data-theme="contact">
       <div
         className={clsx(
+          layout.container,
           classes.container,
-          classes.contact,
-          viewLocation && classes[viewLocation]
+          viewLocation && layout[viewLocation]
         )}
       >
-        <h2 className={clsx(classes.title, classes.large, classes.contact)}>
+        <h2 className={clsx(layout.sectionTitle, classes.title)}>
           Looking to bring my talents to an innovative team. Let's chat!
         </h2>
         <div className={classes.contactDetails}>

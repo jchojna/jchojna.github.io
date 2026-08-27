@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 
-import classes from './Group.module.scss';
+import classes from './Group.module.css';
 
 const ListGroup = ({ title, projectName, content }: ListGroupProps) => {
   return (

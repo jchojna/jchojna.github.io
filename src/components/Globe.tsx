@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 // @ts-expect-error types not available
 import { BarGlob3d } from 'glob3d';
 import { getCitiesData } from '../utils/citiesData';
-import classes from './Globe.module.scss';
+import classes from './Globe.module.css';
 
 const Globe = () => {
   const [_globeInstance, setGlobeInstance] = useState<BarGlob3d | null>(null);

@@ -2,7 +2,7 @@ import clsx from 'clsx';
 
 import { useEffect, useRef } from 'react';
 
-import classes from './Accordion.module.scss';
+import classes from './Accordion.module.css';
 
 const Accordion = ({
   label,
@@ -16,7 +16,6 @@ const Accordion = ({
   const accordionItemsRef = useRef<HTMLUListElement | null>(null);
   const accordionClass = clsx(
     classes.accordion,
-    classes[view],
     !isExpanded && classes.collapsed
   );
 
@@ -35,7 +34,7 @@ const Accordion = ({
   }, [isExpanded]);
 
   return (
-    <div ref={accordionRef} className={accordionClass}>
+    <div ref={accordionRef} className={accordionClass} data-theme={view}>
       <div className={classes.header}>
         <button
           ref={accordionLabelRef}

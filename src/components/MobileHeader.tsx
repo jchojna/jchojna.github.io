@@ -2,12 +2,12 @@ import clsx from 'clsx';
 
 import MobileMenu from './MobileMenu';
 
-import classes from './MobileHeader.module.scss';
+import classes from './MobileHeader.module.css';
 
 type MobileHeaderProps = {
   isMenuMode: boolean;
   setMenuMode: (isMenuMode: boolean) => void;
-  sectionsRef: React.RefObject<HTMLDivElement>;
+  sectionsRef: React.RefObject<HTMLDivElement | null>;
   setIndicatorRef: (indicatorRef: HTMLDivElement | null) => void;
 };
 

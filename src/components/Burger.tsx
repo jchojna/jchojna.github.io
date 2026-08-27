@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 
-import classes from './Burger.module.scss';
+import classes from './Burger.module.css';
 
 type BurgerProps = {
   activeView: string;
@@ -13,9 +13,9 @@ const Burger = ({ activeView, isMenuMode, setMenuMode }: BurgerProps) => {
     <button
       className={clsx(
         classes.burger,
-        !isMenuMode && classes.visible,
-        classes[activeView]
+        !isMenuMode && classes.visible
       )}
+      data-theme={activeView}
       onClick={() => setMenuMode(!isMenuMode)}
     >
       <svg className={classes.svg} viewBox="0 0 100 100">

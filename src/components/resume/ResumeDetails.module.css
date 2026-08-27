@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.label {
+  color: var(--color-resume-light);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.detail {
+  color: var(--color-resume-accent);
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.detail-2,
+.detail-3 {
+  border-left: var(--separator-width) solid var(--color-resume-dark);
+  padding-left: 10px;
+}
+
+.detail-3 {
+  color: var(--color-resume-light);
+}
+
+.description {
+  color: var(--color-resume-white);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px 0 10px 30px;
+}
+
+.responsibility {
+  position: relative;
+
+  &::before {
+    background-color: var(--color-resume-dark);
+    border-radius: calc(var(--border-radius) / 2);
+    content: '';
+    height: 1rem;
+    margin-right: 0.5rem;
+    position: absolute;
+    right: 100%;
+    top: 0.4rem;
+    width: 1rem;
+  }
+}

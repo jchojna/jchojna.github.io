@@ -3,7 +3,7 @@ import { useEffect, useRef } from 'react';
 
 import createIntro from '../utils/createIntro';
 
-import classes from './Intro.module.scss';
+import classes from './Intro.module.css';
 
 type IntroProps = {
   indicator: HTMLDivElement | null;
