@@ -51,7 +51,7 @@ const Menu = ({
       sectionsRefCopy.addEventListener('scroll', handleScroll);
       return () => sectionsRefCopy.removeEventListener('scroll', handleScroll);
     }
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
     handleIndicator();
@@ -79,10 +79,7 @@ const Menu = ({
       <div
         ref={indicatorRef}
         data-id="indicator"
-        className={clsx(
-          classes.indicator,
-          isMenuMode && classes.intro
-        )}
+        className={clsx(classes.indicator, isMenuMode && classes.intro)}
         data-theme={menuItems[currentSectionIndex].label}
       ></div>
       <nav className={menuClass}>
