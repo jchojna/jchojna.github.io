@@ -1,120 +1,307 @@
 {
   "title": "Hello there!",
-  "description": "Combining my past experience as an architect and 3D graphic artist with my current role as a frontend developer, I specialize in crafting visually stunning UI and highly interactive digital experiences.",
-  "highLevel": {
+  "description": "I'm a Software Engineer with 6+ years of commercial experience building data-driven and visually rich web applications across React, Next.js, Remix and Node.js. My background is in architecture and 3D graphics.",
+  "technologies": {
     "title": "Technologies & Tools",
-    "tech": [
+    "items": [
       {
-        "name": "js",
-        "totalSVG": 1
+        "label": "Programming Languages",
+        "tech": [
+          {
+            "name": "typescript",
+            "totalSVG": 1
+          },
+          {
+            "name": "js",
+            "totalSVG": 1
+          },
+          {
+            "name": "R",
+            "totalSVG": 2
+          },
+          {
+            "name": "python",
+            "totalSVG": 1
+          }
+        ]
       },
       {
-        "name": "typescript",
-        "totalSVG": 1
+        "label": "Frameworks",
+        "tech": [
+          {
+            "name": "react",
+            "totalSVG": 1
+          },
+          {
+            "name": "nextjs",
+            "totalSVG": 1
+          },
+          {
+            "name": "remix",
+            "totalSVG": 1
+          },
+          {
+            "name": "electron",
+            "totalSVG": 1
+          },
+          {
+            "name": "gatsby",
+            "totalSVG": 1
+          },
+          {
+            "name": "shiny",
+            "totalSVG": 1
+          }
+        ]
       },
       {
-        "name": "react",
-        "totalSVG": 1
+        "label": "Backend & APIs",
+        "tech": [
+          {
+            "name": "nodejs",
+            "totalSVG": 1
+          },
+          {
+            "name": "express",
+            "totalSVG": 1
+          },
+          {
+            "name": "graphql",
+            "totalSVG": 1
+          },
+          {
+            "name": "rest api",
+            "totalSVG": 1
+          },
+          {
+            "name": "deno",
+            "totalSVG": 1
+          },
+          {
+            "name": "fastapi",
+            "totalSVG": 1
+          }
+        ]
       },
       {
-        "name": "nextjs",
-        "totalSVG": 1
+        "label": "UI & Design Systems",
+        "tech": [
+          {
+            "name": "tailwind",
+            "totalSVG": 1
+          },
+          {
+            "name": "css",
+            "totalSVG": 3
+          },
+          {
+            "name": "GSAP",
+            "totalSVG": 1
+          },
+          {
+            "name": "shadcn",
+            "totalSVG": 1
+          },
+          {
+            "name": "sc",
+            "totalSVG": 1
+          },
+          {
+            "name": "storybook",
+            "totalSVG": 1
+          },
+          {
+            "name": "html",
+            "totalSVG": 3
+          },
+          {
+            "name": "mui",
+            "totalSVG": 1
+          },
+          {
+            "name": "ant design",
+            "totalSVG": 1
+          },
+          {
+            "name": "sass",
+            "totalSVG": 1
+          }
+        ]
       },
       {
-        "name": "react-query",
-        "totalSVG": 1
+        "label": "Databases & Data",
+        "tech": [
+          {
+            "name": "zod",
+            "totalSVG": 1
+          },
+          {
+            "name": "openapi",
+            "totalSVG": 1
+          },
+          {
+            "name": "drizzle orm",
+            "totalSVG": 1
+          },
+          {
+            "name": "prisma orm",
+            "totalSVG": 1
+          },
+          {
+            "name": "postgres",
+            "totalSVG": 1
+          },
+          {
+            "name": "neo4j",
+            "totalSVG": 1
+          }
+        ]
       },
       {
-        "name": "html",
-        "totalSVG": 3
+        "label": "3D & Visualization",
+        "tech": [
+          {
+            "name": "threejs",
+            "totalSVG": 1
+          },
+          {
+            "name": "d3js",
+            "totalSVG": 3
+          },
+          {
+            "name": "webgl",
+            "totalSVG": 1
+          },
+          {
+            "name": "echarts",
+            "totalSVG": 1
+          },
+          {
+            "name": "recharts",
+            "totalSVG": 1
+          }
+        ]
       },
       {
-        "name": "css",
-        "totalSVG": 3
+        "label": "Libraries & Tools",
+        "tech": [
+          {
+            "name": "git",
+            "totalSVG": 1
+          },
+          {
+            "name": "react-query",
+            "totalSVG": 1
+          },
+          {
+            "name": "vite",
+            "totalSVG": 1
+          },
+          {
+            "name": "redux",
+            "totalSVG": 1
+          },
+          {
+            "name": "zustand",
+            "totalSVG": 1
+          },
+          {
+            "name": "i18next",
+            "totalSVG": 1
+          }
+        ]
       },
       {
-        "name": "sass",
-        "totalSVG": 1
+        "label": "Cloud & Infrastructure",
+        "tech": [
+          {
+            "name": "aws",
+            "totalSVG": 1
+          },
+          {
+            "name": "docker",
+            "totalSVG": 1
+          },
+          {
+            "name": "shopify",
+            "totalSVG": 1
+          }
+        ]
       },
       {
-        "name": "tailwind",
-        "totalSVG": 1
+        "label": "Testing",
+        "tech": [
+          {
+            "name": "jest",
+            "totalSVG": 1
+          },
+          {
+            "name": "vitest",
+            "totalSVG": 1
+          },
+          {
+            "name": "cypress",
+            "totalSVG": 1
+          },
+          {
+            "name": "playwright",
+            "totalSVG": 1
+          }
+        ]
       },
       {
-        "name": "mui",
-        "totalSVG": 1
+        "label": "UI & Graphic Design",
+        "tech": [
+          {
+            "name": "figma",
+            "totalSVG": 3
+          },
+          {
+            "name": "photoshop",
+            "totalSVG": 1
+          },
+          {
+            "name": "illustrator",
+            "totalSVG": 1
+          },
+          {
+            "name": "ae",
+            "totalSVG": 1
+          }
+        ]
       },
       {
-        "name": "storybook",
-        "totalSVG": 1
-      },
-      {
-        "name": "git",
-        "totalSVG": 1
-      },
-      {
-        "name": "threejs",
-        "totalSVG": 1
-      },
-      {
-        "name": "figma",
-        "totalSVG": 3
-      },
-      {
-        "name": "jest",
-        "totalSVG": 1
-      },
-      {
-        "name": "cypress",
-        "totalSVG": 1
-      },
-      {
-        "name": "vite",
-        "totalSVG": 1
-      },
-      {
-        "name": "d3js",
-        "totalSVG": 3
-      },
-      {
-        "name": "nodejs",
-        "totalSVG": 1
-      },
-      {
-        "name": "python",
-        "totalSVG": 1
-      },
-      {
-        "name": "docker",
-        "totalSVG": 1
-      },
-      {
-        "name": "R",
-        "totalSVG": 2
-      },
-      {
-        "name": "shiny",
-        "totalSVG": 1
-      },
-      {
-        "name": "gatsby",
-        "totalSVG": 1
-      },
-      {
-        "name": "echarts",
-        "totalSVG": 1
-      },
-      {
-        "name": "npm",
-        "totalSVG": 1
-      },
-      {
-        "name": "graphql",
-        "totalSVG": 1
-      },
-      {
-        "name": "electron",
-        "totalSVG": 1
+        "label": "3d Graphics",
+        "tech": [
+          {
+            "name": "3dsmax",
+            "totalSVG": 1
+          },
+          {
+            "name": "v-ray",
+            "totalSVG": 1
+          },
+          {
+            "name": "rhinoceros",
+            "totalSVG": 1
+          },
+          {
+            "name": "blender",
+            "totalSVG": 1
+          },
+          {
+            "name": "unreal engine",
+            "totalSVG": 1
+          },
+          {
+            "name": "revit",
+            "totalSVG": 1
+          },
+          {
+            "name": "autocad",
+            "totalSVG": 1
+          }
+        ]
       }
     ]
   }

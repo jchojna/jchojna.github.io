@@ -1,19 +1,8 @@
 .container {
-  grid-template-areas:
-    'title'
-    'info'
-    'accordions';
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   max-width: 1200px;
-  padding: var(--menu-item-height) var(--offset-right-s) var(--menu-item-height)
-    var(--offset-left-s);
-
-  @media only screen and (min-width: 1201px) {
-    align-content: start;
-    grid-template-areas:
-      'title title'
-      'info accordions';
-    grid-template-columns: 1fr 2fr;
-  }
 }
 
 .title {
@@ -21,13 +10,15 @@
   color: var(--theme-light);
 }
 
-.info {
-  grid-area: info;
-}
-
 .accordions {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  grid-area: accordions;
+}
+
+.attachments {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }

@@ -2,9 +2,10 @@ import clsx from 'clsx';
 import { useContext } from 'react';
 import { useMediaQuery } from 'react-responsive';
 
-import AccordionsGroup from '../components/AccordionsGroup';
+import attachments from '../content/attachments.json';
 import BlockTitle from '../components/BlockTitle';
 import Graphic from '../components/Graphic';
+import IconLink from '../components/icons/IconLink';
 import menuItems from '../content/menu.json';
 import resume from '../content/resume.json';
 import { getViewLocation } from '../utils/utils';
@@ -15,9 +16,6 @@ import classes from './Resume.module.css';
 const Resume = () => {
   const [currentView] = useContext(CurrentViewContext);
   const isMobile = useMediaQuery({ query: '(max-width: 1200px)' });
-
-  const { experience, education, languages } = resume;
-  const { label, items } = experience;
 
   const viewLocation = getViewLocation(
     currentView,
@@ -42,13 +40,15 @@ const Resume = () => {
           <BlockTitle title={resume.info.heading} view="resume" />
           <p className={layout.normalText}>{resume.info.description}</p>
         </div>
-        <div className={classes.accordions}>
-          <AccordionsGroup
-            accordions={items}
-            title={label}
-            defaultExpanded="Frontend Development"
-          />
-          <AccordionsGroup accordions={[education, languages]} />
+        <div className={classes.attachments}>
+          {attachments.map((attachment) => (
+            <IconLink
+              key={attachment.id}
+              details={attachment}
+              view="resume"
+              large={true}
+            />
+          ))}
         </div>
       </div>
     </div>

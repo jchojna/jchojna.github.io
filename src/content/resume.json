@@ -2,29 +2,36 @@
   "title": "Jakub Chojna",
   "info": {
     "heading": "Personal Info",
-    "description": "As a Frontend Developer, I merge my past as an Architect and 3D Graphic Artist with my present, creating visually compelling, immersive and interactive digital experiences. My four years of commercial experience in software development, enriched by a strong background in parametric architecture programming and 3D visualization, fuels my passion for crafting aesthetically pleasing interfaces. With a keen eye for design and a deep understanding of visual composition, I focus on delivering exceptional multi-dimensional user experiences that seamlessly blend form and function."
+    "description": "Full-stack TypeScript engineer with 6+ years of commercial experience building data-driven and visually rich web applications across React, Next.js, Remix and Node.js. My background in architecture and 3D graphics translates directly into work with UI design, Three.js/WebGL and interactive data visualization — areas I'm looking to deepen, particularly around digital twins and real-time 3D on the web. I've worked across startups and software houses, owning real-time features, design systems and performance-critical dashboards for Fortune 500 clients. I care about high-quality, maintainable code and polished interfaces, with a strong attention to visual detail and consistency."
   },
   "experience": {
     "label": "Experience",
     "items": [
       {
-        "label": "Frontend Development",
+        "label": "Software Development",
         "items": [
           {
-            "label": "Jun 2021 - Present",
-            "items": ["Frontend Developer", "Appsilon", "Remote"],
+            "label": "Dec 2025 - Present",
+            "items": ["Senior Software Engineer", "Netfire LLC", "Remote"],
             "description": [
-              "collaborating in a multinational team within a rapidly growing company, providing consultancy services to a diverse range of clients, including Fortune 500 companies from Pharma, Biodiversity, Energy, and Sport industries",
-              "contributed to the development of complex dashboard applications, with a primary focus on frontend development and occasional contributions to backend development in R. Projects examples: Mbaza - a biodiversity project [TypeScript | React | Electron], Supply Chain application [TypeScript | Next.js | ReactFlow], dashboard applications [VanillaJS | Sass | R]",
-              "tech leader in a few small-scale projects since Q4 2022"
+              "Improved application performance, scalability and Web Vitals by improving caching, memoization, eliminating layout reflows, lazy-loading routes and assets, and refactoring async data fetching — reducing unnecessary computation and client re-renders.",
+              "Owned an ETL pipeline (AWS S3 → PostgreSQL → Shopify) handling multi-type product ingestion, schema validation, and automated lifecycle reconciliation across data stores.",
+              "Maintained generated Zod schemas from OpenAPI specifications, enforcing type-safe API contracts and runtime validation across frontend and backend services.",
+              "Implemented real-time AI chatbot functionality over WebSockets, including streaming responses, interactive workflows, and connection health monitoring.",
+              "Drove a gradual data migration from a third-party commerce platform (Shopify) to PostgreSQL (Drizzle ORM), moving product queries and assets to database-backed resources without service interruption.",
+              "Standardized error handling and improved observability across microservices with shared error types and unified response formats; expanded Sentry coverage to surface silent production failures."
             ]
           },
           {
-            "label": "Jun 2020 - Jun 2021",
-            "items": ["Junior Frontend Developer", "Appsilon", "Remote"],
+            "label": "Jan 2025 - Dec 2025",
+            "items": ["Software Engineer", "Netfire LLC", "Remote"],
             "description": [
-              "focused on frontend development for commercial dashboard applications, involving UI/UX design preparation in Figma",
-              "undertook internal tasks such as website maintenance (e.g., appsilon.com [Typescript | Gatsby | GraphQL]), creation of landing pages (e.g., shiny.tools, shinymanifesto.com [Vanilla JS]), and maintenance of open-source projects"
+              "Developed full-stack features across a Remix frontend, Express.js microservices, and PostgreSQL database — including subscription flows, data-driven UI features, and API integrations end-to-end.",
+              "Built and maintained reusable components within a shared styled-components design system (Storybook), ensuring consistent UI patterns across multiple applications.",
+              "Implemented product listing interfaces with filtering, detail pages with dynamic layouts and data transformations, image galleries with resolution-optimized thumbnails, and loading skeletons.",
+              "Ported authentication and content features between codebases, refactoring to fit different design systems and application patterns.",
+              "Performed cross-browser functional and visual QA, then implemented responsive and accessibility fixes across the application.",
+              "Prepared the application for search engine indexing — added sitemap generation, improved SEO, corrected URL structures, and removed non-public content from crawlable pages."
             ]
           }
         ]

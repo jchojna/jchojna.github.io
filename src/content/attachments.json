@@ -1,0 +1,20 @@
+[
+  {
+    "id": "resume",
+    "name": "Resume",
+    "url": "assets/jakub_chojna_resume.pdf",
+    "ariaLabel": "Resume"
+  },
+  {
+    "id": "architectural_portfolio",
+    "name": "Architectural Portfolio",
+    "url": "https://jchojna.github.io/archviz-website/pdf/architectural_portfolio.pdf",
+    "ariaLabel": "Architectural Portfolio"
+  },
+  {
+    "id": "archviz_portfolio",
+    "name": "Archviz Portfolio",
+    "url": "https://jchojna.github.io/archviz-website/pdf/archviz_portfolio.pdf",
+    "ariaLabel": "Archviz Portfolio"
+  }
+]

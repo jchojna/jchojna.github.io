@@ -13,4 +13,8 @@
 
 .paragraph {
   margin: 0;
+
+  @media screen and (max-width: 1200px) {
+    padding-left: var(--text-indent);
+  }
 }
