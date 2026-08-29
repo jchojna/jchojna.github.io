@@ -65,6 +65,15 @@
   }
 }
 
+.placeholder {
+  pointer-events: none;
+  opacity: 0.75;
+
+  &:hover {
+    transform: none;
+  }
+}
+
 .name {
   color: var(--theme-light);
   font-size: 10px;

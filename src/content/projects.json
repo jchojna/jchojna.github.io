@@ -1,50 +1,5 @@
 [
   {
-    "name": "ghUsers",
-    "repoName": "github-users",
-    "about": [
-      "This is a simple web application that allows users to search for Github users by their username and displays the user data. The application uses the Github API to fetch user data."
-    ],
-    "features": [
-      {
-        "label": "Features",
-        "items": [
-          "fetching user data from the Github API",
-          "form validation",
-          "error handling for fetched data",
-          "loading states with skeleton loaders",
-          "empty states",
-          "infinite scrolling",
-          "responsive design",
-          "unit tests with vitest",
-          "CI/CD setup"
-        ]
-      }
-    ],
-    "icons": [
-      {
-        "name": "typescript",
-        "totalSVG": 1
-      },
-      {
-        "name": "react",
-        "totalSVG": 1
-      },
-      {
-        "name": "mui",
-        "totalSVG": 1
-      },
-      {
-        "name": "react-query",
-        "totalSVG": 1
-      },
-      {
-        "name": "vite",
-        "totalSVG": 1
-      }
-    ]
-  },
-  {
     "name": "glob3d",
     "repoName": "glob3d",
     "about": [
@@ -71,51 +26,6 @@
       },
       {
         "name": "threejs",
-        "totalSVG": 1
-      },
-      {
-        "name": "sass",
-        "totalSVG": 1
-      }
-    ]
-  },
-  {
-    "name": "tasktimer",
-    "repoName": "task-timer",
-    "about": [
-      "This excercise application is quite advanced Pomodoro Clock built with React, featuring a playful, interactive board game-like interface. It supports concurrent multi-tasking, allowing multiple tasks to run simultaneously."
-    ],
-    "features": [
-      {
-        "label": "Functionality",
-        "items": [
-          "simplistic client-side user authentication",
-          "user's profile edition",
-          "creating, editing and removing tasks by specifying a task name, time and maximum break time",
-          "validation rules applied to inputs",
-          "progress bars for both elapsed and remaining time modes",
-          "stats section for all finished tasks",
-          "local storage support for saving the data"
-        ]
-      },
-      {
-        "label": "User Interface",
-        "items": [
-          "intro animation is based on SVG logo with masking applied to casted shadow",
-          "minimizable cards",
-          "drag and drop functionality without third-party libraries",
-          "app is fully responsive with grid of cards adjusting to viewport size",
-          "implemented based on the Figma mockup"
-        ]
-      }
-    ],
-    "icons": [
-      {
-        "name": "typescript",
-        "totalSVG": 1
-      },
-      {
-        "name": "react",
         "totalSVG": 1
       },
       {
@@ -163,6 +73,96 @@
       {
         "name": "javascript",
         "totalSVG": 3
+      },
+      {
+        "name": "sass",
+        "totalSVG": 1
+      }
+    ]
+  },
+  {
+    "name": "ghUsers",
+    "repoName": "github-users",
+    "about": [
+      "This is a simple web application that allows users to search for Github users by their username and displays the user data. The application uses the Github API to fetch user data."
+    ],
+    "features": [
+      {
+        "label": "Features",
+        "items": [
+          "fetching user data from the Github API",
+          "form validation",
+          "error handling for fetched data",
+          "loading states with skeleton loaders",
+          "empty states",
+          "infinite scrolling",
+          "responsive design",
+          "unit tests with vitest",
+          "CI/CD setup"
+        ]
+      }
+    ],
+    "icons": [
+      {
+        "name": "typescript",
+        "totalSVG": 1
+      },
+      {
+        "name": "react",
+        "totalSVG": 1
+      },
+      {
+        "name": "mui",
+        "totalSVG": 1
+      },
+      {
+        "name": "react-query",
+        "totalSVG": 1
+      },
+      {
+        "name": "vite",
+        "totalSVG": 1
+      }
+    ]
+  },
+  {
+    "name": "tasktimer",
+    "repoName": "task-timer",
+    "about": [
+      "This excercise application is quite advanced Pomodoro Clock built with React, featuring a playful, interactive board game-like interface. It supports concurrent multi-tasking, allowing multiple tasks to run simultaneously."
+    ],
+    "features": [
+      {
+        "label": "Functionality",
+        "items": [
+          "simplistic client-side user authentication",
+          "user's profile edition",
+          "creating, editing and removing tasks by specifying a task name, time and maximum break time",
+          "validation rules applied to inputs",
+          "progress bars for both elapsed and remaining time modes",
+          "stats section for all finished tasks",
+          "local storage support for saving the data"
+        ]
+      },
+      {
+        "label": "User Interface",
+        "items": [
+          "intro animation is based on SVG logo with masking applied to casted shadow",
+          "minimizable cards",
+          "drag and drop functionality without third-party libraries",
+          "app is fully responsive with grid of cards adjusting to viewport size",
+          "implemented based on the Figma mockup"
+        ]
+      }
+    ],
+    "icons": [
+      {
+        "name": "typescript",
+        "totalSVG": 1
+      },
+      {
+        "name": "react",
+        "totalSVG": 1
       },
       {
         "name": "sass",

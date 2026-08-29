@@ -13,6 +13,14 @@ import CurrentViewContext from './CurrentViewContext';
 import layout from '../styles/layout.module.css';
 import classes from './About.module.css';
 
+const TECH_SLOT_SIZE = 7;
+const TECH_COLUMN_SIZE = 5;
+
+const getPlaceholderCount = (iconCount: number) => {
+  if (iconCount === 0) return 0;
+  return Math.ceil(iconCount / TECH_SLOT_SIZE) * TECH_SLOT_SIZE - iconCount;
+};
+
 const About = () => {
   const [currentView] = useContext(CurrentViewContext);
 
@@ -50,10 +58,21 @@ const About = () => {
         <div className={classes.technologies}>
           <BlockTitle title={about.technologies.title} view="about" />
           <div className={classes.techGroups}>
-            {about.technologies.items.map((group) => (
-              <div key={group.label} className={classes.techGroup}>
-                <h4 className={classes.techGroupTitle}>{group.label}</h4>
-                <IconsList view="about" icons={group.tech} />
+            {[
+              about.technologies.items.slice(0, TECH_COLUMN_SIZE),
+              about.technologies.items.slice(TECH_COLUMN_SIZE),
+            ].map((column, columnIndex) => (
+              <div key={columnIndex} className={classes.techColumn}>
+                {column.map((group) => (
+                  <div key={group.label} className={classes.techGroup}>
+                    <h4 className={classes.techGroupTitle}>{group.label}</h4>
+                    <IconsList
+                      view="about"
+                      icons={group.tech}
+                      placeholderCount={getPlaceholderCount(group.tech.length)}
+                    />
+                  </div>
+                ))}
               </div>
             ))}
           </div>

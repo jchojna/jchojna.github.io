@@ -50,22 +50,38 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  max-width: 800px;
 }
 
 .techGroups {
-  display: grid;
-  grid-template-columns: 1fr;
-  row-gap: 10px;
-  column-gap: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   padding-left: var(--text-indent);
 
   @media screen and (min-width: 1201px) {
-    grid-template-columns: auto 1fr;
+    column-gap: 20px;
+    flex-direction: row;
+    align-items: flex-start;
     padding-left: 0;
   }
 
   ul {
     padding-left: 0;
+  }
+}
+
+.techColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 350px;
+
+  @media screen and (min-width: 1201px) {
+    flex: 1;
+    min-width: 0;
+    gap: 10px;
+    max-width: none;
   }
 }
 

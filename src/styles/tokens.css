@@ -64,7 +64,7 @@
   --color-resume-black: color-mix(in srgb, var(--color-resume) 10%, black);
 
   /* GH-Users */
-  --color-ghUsers: #4b3ddb;
+  --color-ghUsers: #c045dc;
   --color-ghUsers-accent: #59aff6;
   --color-ghUsers-white: color-mix(in srgb, var(--color-ghUsers) 20%, white);
   --color-ghUsers-light: color-mix(in srgb, var(--color-ghUsers) 40%, white);
@@ -72,7 +72,7 @@
   --color-ghUsers-black: color-mix(in srgb, var(--color-ghUsers) 10%, black);
 
   /* Glob3D */
-  --color-glob3d: #8945dc;
+  --color-glob3d: #4b3ddb;
   --color-glob3d-accent: #e5a110;
   --color-glob3d-white: color-mix(in srgb, var(--color-glob3d) 20%, white);
   --color-glob3d-light: color-mix(in srgb, var(--color-glob3d) 40%, white);
@@ -80,17 +80,29 @@
   --color-glob3d-black: color-mix(in srgb, var(--color-glob3d) 10%, black);
 
   /* Tasktimer */
-  --color-tasktimer: #c045dc;
+  --color-tasktimer: #dc45c5;
   --color-tasktimer-accent: #44b7b9;
-  --color-tasktimer-white: color-mix(in srgb, var(--color-tasktimer) 20%, white);
-  --color-tasktimer-light: color-mix(in srgb, var(--color-tasktimer) 40%, white);
+  --color-tasktimer-white: color-mix(
+    in srgb,
+    var(--color-tasktimer) 20%,
+    white
+  );
+  --color-tasktimer-light: color-mix(
+    in srgb,
+    var(--color-tasktimer) 40%,
+    white
+  );
   --color-tasktimer-dark: color-mix(in srgb, var(--color-tasktimer) 20%, black);
-  --color-tasktimer-black: color-mix(in srgb, var(--color-tasktimer) 10%, black);
+  --color-tasktimer-black: color-mix(
+    in srgb,
+    var(--color-tasktimer) 10%,
+    black
+  );
   --color-tasktimer-letter: #703035;
   --color-tasktimer-letterShadow: #441c20;
 
   /* Hydrapp */
-  --color-hydrapp: #dc45c5;
+  --color-hydrapp: #8945dc;
   --color-hydrapp-accent: #48bef9;
   --color-hydrapp-white: color-mix(in srgb, var(--color-hydrapp) 20%, white);
   --color-hydrapp-light: color-mix(in srgb, var(--color-hydrapp) 40%, white);
@@ -100,10 +112,22 @@
   /* Portfolio */
   --color-portfolio: #dc45a2;
   --color-portfolio-accent: #68983a;
-  --color-portfolio-white: color-mix(in srgb, var(--color-portfolio) 20%, white);
-  --color-portfolio-light: color-mix(in srgb, var(--color-portfolio) 40%, white);
+  --color-portfolio-white: color-mix(
+    in srgb,
+    var(--color-portfolio) 20%,
+    white
+  );
+  --color-portfolio-light: color-mix(
+    in srgb,
+    var(--color-portfolio) 40%,
+    white
+  );
   --color-portfolio-dark: color-mix(in srgb, var(--color-portfolio) 20%, black);
-  --color-portfolio-black: color-mix(in srgb, var(--color-portfolio) 10%, black);
+  --color-portfolio-black: color-mix(
+    in srgb,
+    var(--color-portfolio) 10%,
+    black
+  );
 
   /* Archviz */
   --color-archviz: #dc4572;

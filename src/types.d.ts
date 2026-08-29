@@ -54,6 +54,7 @@ type IconProps = {
 type IconsList = {
   view: string;
   icons: IconDetails[];
+  placeholderCount?: number;
 };
 
 type ProjectLinksProps = {

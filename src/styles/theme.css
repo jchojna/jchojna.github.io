@@ -17,17 +17,6 @@
   --theme-dark: var(--color-resume-dark);
   --theme-black: var(--color-resume-black);
   --theme-prev: var(--color-about);
-  --theme-next: var(--color-ghUsers);
-}
-
-[data-theme='ghUsers'] {
-  --theme: var(--color-ghUsers);
-  --theme-accent: var(--color-ghUsers-accent);
-  --theme-white: var(--color-ghUsers-white);
-  --theme-light: var(--color-ghUsers-light);
-  --theme-dark: var(--color-ghUsers-dark);
-  --theme-black: var(--color-ghUsers-black);
-  --theme-prev: var(--color-resume);
   --theme-next: var(--color-glob3d);
 }
 
@@ -38,18 +27,7 @@
   --theme-light: var(--color-glob3d-light);
   --theme-dark: var(--color-glob3d-dark);
   --theme-black: var(--color-glob3d-black);
-  --theme-prev: var(--color-ghUsers);
-  --theme-next: var(--color-tasktimer);
-}
-
-[data-theme='tasktimer'] {
-  --theme: var(--color-tasktimer);
-  --theme-accent: var(--color-tasktimer-accent);
-  --theme-white: var(--color-tasktimer-white);
-  --theme-light: var(--color-tasktimer-light);
-  --theme-dark: var(--color-tasktimer-dark);
-  --theme-black: var(--color-tasktimer-black);
-  --theme-prev: var(--color-glob3d);
+  --theme-prev: var(--color-resume);
   --theme-next: var(--color-hydrapp);
 }
 
@@ -60,7 +38,29 @@
   --theme-light: var(--color-hydrapp-light);
   --theme-dark: var(--color-hydrapp-dark);
   --theme-black: var(--color-hydrapp-black);
-  --theme-prev: var(--color-tasktimer);
+  --theme-prev: var(--color-glob3d);
+  --theme-next: var(--color-ghUsers);
+}
+
+[data-theme='ghUsers'] {
+  --theme: var(--color-ghUsers);
+  --theme-accent: var(--color-ghUsers-accent);
+  --theme-white: var(--color-ghUsers-white);
+  --theme-light: var(--color-ghUsers-light);
+  --theme-dark: var(--color-ghUsers-dark);
+  --theme-black: var(--color-ghUsers-black);
+  --theme-prev: var(--color-hydrapp);
+  --theme-next: var(--color-tasktimer);
+}
+
+[data-theme='tasktimer'] {
+  --theme: var(--color-tasktimer);
+  --theme-accent: var(--color-tasktimer-accent);
+  --theme-white: var(--color-tasktimer-white);
+  --theme-light: var(--color-tasktimer-light);
+  --theme-dark: var(--color-tasktimer-dark);
+  --theme-black: var(--color-tasktimer-black);
+  --theme-prev: var(--color-ghUsers);
   --theme-next: var(--color-portfolio);
 }
 
@@ -71,7 +71,7 @@
   --theme-light: var(--color-portfolio-light);
   --theme-dark: var(--color-portfolio-dark);
   --theme-black: var(--color-portfolio-black);
-  --theme-prev: var(--color-hydrapp);
+  --theme-prev: var(--color-tasktimer);
   --theme-next: var(--color-archviz);
 }
 
