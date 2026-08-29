@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
+  row-gap: 32px;
   grid-area: icons;
   margin: 0;
   padding: 0;
