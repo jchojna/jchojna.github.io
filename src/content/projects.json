@@ -63,19 +63,31 @@
     ],
     "icons": [
       {
-        "name": "html",
-        "totalSVG": 3
+        "name": "typescript",
+        "totalSVG": 1
       },
       {
-        "name": "css",
-        "totalSVG": 3
+        "name": "nextjs",
+        "totalSVG": 1
       },
       {
-        "name": "javascript",
-        "totalSVG": 3
+        "name": "react-query",
+        "totalSVG": 1
       },
       {
-        "name": "sass",
+        "name": "drizzle orm",
+        "totalSVG": 1
+      },
+      {
+        "name": "zod",
+        "totalSVG": 1
+      },
+      {
+        "name": "tailwind",
+        "totalSVG": 1
+      },
+      {
+        "name": "GSAP",
         "totalSVG": 1
       }
     ]
