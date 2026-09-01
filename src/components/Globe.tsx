@@ -11,15 +11,15 @@ const Globe = () => {
 
   useEffect(() => {
     if (globeRef.current && globeRef.current.children.length === 0) {
-      setGlobeInstance(
-        new BarGlob3d(globeRef.current, data, {
-          tooltipValueSuffix: 'people',
-          globeColor: '#120e36',
-          barColor: '#b4afe8',
-          barActiveColor: '#e5a110',
-          tooltipActiveBackgroundColor: '#e5a110',
-        })
-      );
+      const globe = new BarGlob3d(globeRef.current, [], {
+        tooltipValueSuffix: 'people',
+        globeColor: '#120e36',
+        barColor: '#b4afe8',
+        barActiveColor: '#e5a110',
+        tooltipActiveBackgroundColor: '#e5a110',
+      });
+      globe.onUpdate(data);
+      setGlobeInstance(globe);
     }
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
