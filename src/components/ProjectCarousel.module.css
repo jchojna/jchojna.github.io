@@ -2,12 +2,19 @@
   align-items: center;
   display: flex;
   justify-content: flex-end;
-  max-width: 1200px;
   overflow: hidden;
   width: 100%;
+  padding-left: 40px;
+  padding-right: 20px;
 
   @media screen and (min-width: 1201px) {
+    padding-left: 0;
+    padding-right: 20px;
     height: 100vh;
+  }
+
+  @media only screen and (min-width: 1681px) {
+    max-width: 35vw;
   }
 }
 

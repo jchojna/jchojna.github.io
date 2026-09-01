@@ -8,11 +8,14 @@
   display: flex;
   flex-direction: column;
   gap: 50px;
-  max-width: 1400px;
   width: 100%;
 
   @media screen and (min-width: 1201px) {
     flex-direction: row;
+  }
+
+  @media only screen and (min-width: 1681px) {
+    padding-left: 15vw;
   }
 }
 
