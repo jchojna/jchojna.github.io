@@ -21,16 +21,12 @@
         "totalSVG": 1
       },
       {
-        "name": "javascript",
-        "totalSVG": 3
-      },
-      {
         "name": "threejs",
         "totalSVG": 1
       },
       {
-        "name": "sass",
-        "totalSVG": 1
+        "name": "css",
+        "totalSVG": 3
       }
     ]
   },
