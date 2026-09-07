@@ -12,9 +12,12 @@ const Globe = () => {
     if (globeRef.current && globeRef.current.children.length === 0) {
       const globe = new BarGlob3d(globeRef.current, [], {
         tooltipValueSuffix: 'people',
+        tooltipsLimit: 12,
         globeColor: '#120e36',
         barColor: '#b4afe8',
         barActiveColor: '#e5a110',
+        highestBar: 0.25,
+        landCellPadding: 0.75,
       });
       globe.onUpdate(data);
       setGlobeInstance(globe);

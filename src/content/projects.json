@@ -3,15 +3,15 @@
     "name": "glob3d",
     "repoName": "glob3d",
     "about": [
-      "My first npm package built using vanilla JS, Three.js and TypeScript. It is a 3D globe with a customizable set of markers, each with a tooltip. The globe can be rotated and zoomed in and out. The package is published on npm and can be easily installed and used in any project."
+      "An npm package built with TypeScript and Three.js that renders an interactive 3D globe. It supports a customizable set of markers with tooltips, along with rotation and zoom. The package is published on npm and can be installed in any JavaScript project."
     ],
     "features": [
       {
         "label": "Functionality",
         "items": [
-          "the package allows to visualize bar markers on the globe or just bare globe",
-          "there is many options to customize the globe, markers and tooltips",
-          "highlighting markers on hover and click events"
+          "bar-marker visualization, or a bare globe",
+          "customizable globe, markers, and tooltips",
+          "marker highlighting on hover and click"
         ]
       }
     ],
@@ -34,18 +34,18 @@
     "name": "hydrapp",
     "repoName": "hydrApp",
     "about": [
-      "This playful app is a water consumption tracker that allows users to easily log their daily water intake. It features an archive section for viewing weekly consumption trends and an account settings section for personalization. Users can view their own and others' statistics. The app incorporates gamification elements, rewarding users with points for maintaining consistent water intake, and features a dynamic user ranking system."
+      "A water consumption tracker for logging daily intake, reviewing weekly trends, and managing account settings. Users can view their own statistics alongside those of others. Gamification rewards consistent hydration with points and a live ranking system."
     ],
     "features": [
       {
         "label": "Functionality",
         "items": [
-          "archive section for viewing weekly consumption trends",
-          "stats section displaying each user's daily water intake",
-          "calculating user's current and longest streak",
-          "ranking of users based on highest point score",
-          "profile settings edition",
-          "local storage support for saving the data"
+          "archive of weekly consumption trends",
+          "stats view of each user's daily water intake",
+          "current and longest hydration streaks",
+          "user ranking by point score",
+          "editable profile settings",
+          "local storage for persisted data"
         ]
       },
       {
@@ -53,7 +53,7 @@
         "items": [
           "intro animation",
           "animated water level and counter",
-          "emojis indicating consumed amount of water"
+          "emojis reflecting the amount of water consumed"
         ]
       }
     ],
@@ -92,20 +92,20 @@
     "name": "ghUsers",
     "repoName": "github-users",
     "about": [
-      "This is a simple web application that allows users to search for Github users by their username and displays the user data. The application uses the Github API to fetch user data."
+      "A web application for searching GitHub users by username and displaying their profile data, retrieved from the GitHub API."
     ],
     "features": [
       {
         "label": "Features",
         "items": [
-          "fetching user data from the Github API",
+          "user data fetched from the GitHub API",
           "form validation",
           "error handling for fetched data",
           "loading states with skeleton loaders",
           "empty states",
           "infinite scrolling",
           "responsive design",
-          "unit tests with vitest",
+          "unit tests with Vitest",
           "CI/CD setup"
         ]
       }
@@ -137,29 +137,29 @@
     "name": "tasktimer",
     "repoName": "task-timer",
     "about": [
-      "This excercise application is quite advanced Pomodoro Clock built with React, featuring a playful, interactive board game-like interface. It supports concurrent multi-tasking, allowing multiple tasks to run simultaneously."
+      "A Pomodoro-style timer built with React, presented as an interactive board-game interface. It supports concurrent multitasking, so multiple tasks can run at the same time."
     ],
     "features": [
       {
         "label": "Functionality",
         "items": [
-          "simplistic client-side user authentication",
-          "user's profile edition",
-          "creating, editing and removing tasks by specifying a task name, time and maximum break time",
-          "validation rules applied to inputs",
-          "progress bars for both elapsed and remaining time modes",
-          "stats section for all finished tasks",
-          "local storage support for saving the data"
+          "client-side user authentication",
+          "editable user profile",
+          "create, edit, and remove tasks with a name, duration, and maximum break time",
+          "input validation",
+          "progress bars for elapsed and remaining time",
+          "stats for completed tasks",
+          "local storage for persisted data"
         ]
       },
       {
         "label": "User Interface",
         "items": [
-          "intro animation is based on SVG logo with masking applied to casted shadow",
+          "intro animation using an SVG logo with a masked cast shadow",
           "minimizable cards",
-          "drag and drop functionality without third-party libraries",
-          "app is fully responsive with grid of cards adjusting to viewport size",
-          "implemented based on the Figma mockup"
+          "drag and drop without third-party libraries",
+          "responsive card grid that adapts to the viewport",
+          "implemented from a Figma mockup"
         ]
       }
     ],
@@ -182,19 +182,19 @@
     "name": "portfolio",
     "repoName": "jchojna.github.io",
     "about": [
-      "This project is a showcase of my pet projects, each presented in its own section. The site is a Single Page Application (SPA) with a focus on interactivity and animation, balanced with performance considerations to ensure smooth transitions.",
-      "The project was initially built with vanilla JavaScript and later rewritten to Typescript and React."
+      "A single-page portfolio showcasing selected projects, each in its own section. The site emphasizes interactivity and animation while keeping transitions performant.",
+      "Originally built in vanilla JavaScript, it was later rewritten in TypeScript and React."
     ],
     "features": [
       {
         "label": "Functionality",
         "items": [
-          "code splitting using Suspense and lazy functions",
-          "async/await code for executing intro animations in a sequence",
-          "using github API to fetch project details data",
-          "custom accordions without use of third-party libraries",
-          "extensive use of SVG elements - logos, graphics, menu items",
-          "different menu components for mobile and desktop devices"
+          "code splitting with Suspense and lazy loading",
+          "sequenced intro animations with async/await",
+          "project details fetched from the GitHub API",
+          "custom accordions without third-party libraries",
+          "custom SVG logos, graphics, and menu items",
+          "separate menu components for mobile and desktop"
         ]
       }
     ],
@@ -229,17 +229,17 @@
     "name": "archviz",
     "repoName": "archviz-website",
     "about": [
-      "This project balances the use of high-quality images with page load performance by implementing SVG placeholders for each image. Raster images are loaded progressively based on their visibility on the screen, utilizing lazy loading. The project is built primarily with custom functions, with few exceptions. All visualizations on the site were created by me when I used to work as an architectural visualizer."
+      "An architectural visualization gallery that balances high-quality imagery with load performance through SVG placeholders and visibility-based lazy loading. The site is built largely with custom JavaScript. The visualizations were created during my work as an architectural visualizer."
     ],
     "features": [
       {
         "label": "Functionality",
         "items": [
-          "custom responsive grid of images written in JS. Each row's height depends on an aspect ratios of the images on the same row",
-          "SVG placeholders for loading visualizations",
-          "custom lazy loading for grid images and gallery pictures",
-          "responsive carousel of images with two display modes",
-          "page pre-loader"
+          "custom responsive image grid in JavaScript, with row height based on the aspect ratios of images in that row",
+          "SVG placeholders while visualizations load",
+          "custom lazy loading for grid and gallery images",
+          "responsive image carousel with two display modes",
+          "page preloader"
         ]
       }
     ],
