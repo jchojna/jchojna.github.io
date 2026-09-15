@@ -18,6 +18,7 @@ const Globe = () => {
         barActiveColor: '#e5a110',
         highestBar: 0.25,
         landCellPadding: 0.75,
+        halo: true,
       });
       globe.onUpdate(data);
       setGlobeInstance(globe);
