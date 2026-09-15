@@ -27,6 +27,10 @@
       {
         "name": "css",
         "totalSVG": 3
+      },
+      {
+        "name": "vitest",
+        "totalSVG": 1
       }
     ]
   },
@@ -200,18 +204,6 @@
     ],
     "icons": [
       {
-        "name": "html",
-        "totalSVG": 3
-      },
-      {
-        "name": "css",
-        "totalSVG": 3
-      },
-      {
-        "name": "javascript",
-        "totalSVG": 3
-      },
-      {
         "name": "typescript",
         "totalSVG": 1
       },
@@ -220,7 +212,15 @@
         "totalSVG": 1
       },
       {
-        "name": "sass",
+        "name": "css",
+        "totalSVG": 3
+      },
+      {
+        "name": "react-query",
+        "totalSVG": 1
+      },
+      {
+        "name": "vite",
         "totalSVG": 1
       }
     ]

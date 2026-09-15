@@ -16,7 +16,7 @@ import layout from '../styles/layout.module.css';
 import classes from './Project.module.css';
 
 const Globe = lazy(() => import('../components/Globe'));
-const ProjectCarousel = lazy(() => import('../components/ProjectCarousel'));
+const ProjectGallery = lazy(() => import('../components/ProjectGallery'));
 
 type ProjectProps = {
   name: string;
@@ -57,14 +57,14 @@ const Project = ({
       data-theme={name}
     >
       <Graphic view={name} />
-      <div
-        className={clsx(
-          layout.animatedContainer,
-          classes.container,
-          viewLocation && !isMobile && layout[viewLocation]
-        )}
-      >
-        <div className={clsx(classes.content)}>
+      <div className={classes.container}>
+        <div
+          className={clsx(
+            layout.animatedContainer,
+            classes.content,
+            viewLocation && !isMobile && layout[viewLocation]
+          )}
+        >
           <TextGroup title="About Project" projectName={name} content={about} />
           <ProjectFeatures projectName={name} content={features} />
           <IconsList view={name} icons={icons} />
@@ -81,7 +81,11 @@ const Project = ({
         </div>
         <Suspense fallback={<Loader />}>
           {isIntroDone && name !== 'glob3d' && (
-            <ProjectCarousel snapshots={snapshots} />
+            <ProjectGallery
+              demoUrl={homepage}
+              projectName={name}
+              snapshots={snapshots}
+            />
           )}
         </Suspense>
         <Suspense fallback={<Loader />}>
