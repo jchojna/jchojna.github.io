@@ -3,7 +3,7 @@ import { type PointerEvent, useEffect, useMemo, useRef, useState } from 'react';
 import classes from './ProjectGallery.module.css';
 
 const GALLERY_SIZE = 4;
-const MAX_TILT = 16;
+const MAX_TILT = 10;
 
 type ProjectGalleryProps = {
   demoUrl: string;

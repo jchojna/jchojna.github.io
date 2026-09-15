@@ -1,54 +1,41 @@
 import { useQuery } from '@tanstack/react-query';
 
 // gh-users snapshots
-import ghUsersSnap1 from '../assets/img/ghUsers/01.jpg';
-import ghUsersSnap2 from '../assets/img/ghUsers/02.jpg';
+import ghUsersSnap1 from '../assets/img/ghUsers/01.webp';
+import ghUsersSnap2 from '../assets/img/ghUsers/02.webp';
+import ghUsersSnap3 from '../assets/img/ghUsers/03.webp';
+import ghUsersSnap4 from '../assets/img/ghUsers/04.webp';
 // tasktimer snapshots
-import tasktimerSnap1 from '../assets/img/tasktimer/01.jpg';
-import tasktimerSnap2 from '../assets/img/tasktimer/02.jpg';
-import tasktimerSnap3 from '../assets/img/tasktimer/03.jpg';
-import tasktimerSnap4 from '../assets/img/tasktimer/04.jpg';
+import tasktimerSnap1 from '../assets/img/tasktimer/01.webp';
+import tasktimerSnap2 from '../assets/img/tasktimer/02.webp';
+import tasktimerSnap3 from '../assets/img/tasktimer/03.webp';
+import tasktimerSnap4 from '../assets/img/tasktimer/04.webp';
 // hydrapp snapshots
-import hydrappSnap1 from '../assets/img/hydrapp/01.jpg';
-import hydrappSnap2 from '../assets/img/hydrapp/02.jpg';
-import hydrappSnap3 from '../assets/img/hydrapp/03.jpg';
-import hydrappSnap4 from '../assets/img/hydrapp/04.jpg';
-import hydrappSnap5 from '../assets/img/hydrapp/05.jpg';
-import hydrappSnap6 from '../assets/img/hydrapp/06.jpg';
-import hydrappSnap7 from '../assets/img/hydrapp/07.jpg';
+import hydrappSnap1 from '../assets/img/hydrapp/01.webp';
+import hydrappSnap2 from '../assets/img/hydrapp/02.webp';
+import hydrappSnap3 from '../assets/img/hydrapp/03.webp';
+import hydrappSnap4 from '../assets/img/hydrapp/04.webp';
+// portfolio snapshots
+import portfolioSnap1 from '../assets/img/portfolio/01.webp';
+import portfolioSnap2 from '../assets/img/portfolio/02.webp';
+import portfolioSnap3 from '../assets/img/portfolio/03.webp';
+import portfolioSnap4 from '../assets/img/portfolio/04.webp';
 // archviz snapshots
-import archvizSnap1 from '../assets/img/archviz/01.jpg';
-import archvizSnap2 from '../assets/img/archviz/02.jpg';
-import archvizSnap3 from '../assets/img/archviz/03.jpg';
-import archvizSnap4 from '../assets/img/archviz/04.jpg';
-import archvizSnap5 from '../assets/img/archviz/05.jpg';
-import archvizSnap6 from '../assets/img/archviz/06.jpg';
+import archvizSnap1 from '../assets/img/archviz/01.webp';
+import archvizSnap2 from '../assets/img/archviz/02.webp';
+import archvizSnap3 from '../assets/img/archviz/03.webp';
+import archvizSnap4 from '../assets/img/archviz/04.webp';
 
 import projects from '../content/projects.json';
 import Project from './Project';
 
 const snapshots: { [key: string]: string[] } = {
-  ghUsers: [ghUsersSnap1, ghUsersSnap2],
+  ghUsers: [ghUsersSnap1, ghUsersSnap2, ghUsersSnap3, ghUsersSnap4],
   glob3d: [],
   tasktimer: [tasktimerSnap1, tasktimerSnap2, tasktimerSnap3, tasktimerSnap4],
-  hydrapp: [
-    hydrappSnap1,
-    hydrappSnap2,
-    hydrappSnap3,
-    hydrappSnap4,
-    hydrappSnap5,
-    hydrappSnap6,
-    hydrappSnap7,
-  ],
-  portfolio: [],
-  archviz: [
-    archvizSnap1,
-    archvizSnap2,
-    archvizSnap3,
-    archvizSnap4,
-    archvizSnap5,
-    archvizSnap6,
-  ],
+  hydrapp: [hydrappSnap1, hydrappSnap2, hydrappSnap3, hydrappSnap4],
+  portfolio: [portfolioSnap1, portfolioSnap2, portfolioSnap3, portfolioSnap4],
+  archviz: [archvizSnap1, archvizSnap2, archvizSnap3, archvizSnap4],
 };
 
 type ProjectsProps = {
